@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Assignment Homepage.css">
+        <title>Assignment Homepage</title>
+    </head>
+    
+    <body>
+
+        <ul>
+            <li><a class="active" href="Assignment Homepage.html">Home</a></li>
+            <li><a href="assignments.html">Assignments</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+        </ul>
+
+    <h1>Assignment Homepage</h1>
+
+    <div>
+        <p>
+            This is the homepage for my semesters work. On the Navigation bar there are 3 links. This current link is the homepage. There is the Assignments page which
+            will have all of my assignments for the whole semester. There is also the About Me page that has information about who I am. 
+        </p>
+    </div>
+
+    <div>
+        <p>If you would like to get in contact with me, please feel free to fill out the form below. It will sent me an email.</p>
+    </div>
+
+    <br>
+    <br>
+    
+    <div>
+        <form action="email.php" method="post" enctype="text/plain">
+
+            Name: <input type="text" name="name"><br>
+
+            E-mail: <input type="text" name="email"><br><br>
+
+            Comment:<br>
+            <textarea rows="5" cols="60" name="comment" placeholder="Enter E-mail here..."></textarea>   
+
+            <br><br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+            </form>
+    </div>
+
+    <?php
+        $name = echo $_GET["name"];
+        $email = echo $_GET["name"];
+        $comment = echo $_GET["comment"];
+
+    ?>
+
+    </body>
+</html>
