@@ -15,6 +15,8 @@
         echo "Email was sent. Thank you " . $name;
 
     }
+    echo "Email was sent. Thank you " . $name;
+
 
    // header("Location: Assignment Homepage.html");
         
