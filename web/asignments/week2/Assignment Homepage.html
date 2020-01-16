@@ -30,7 +30,7 @@
     <br>
     
     <div>
-        <form action="email.php" method="post" enctype="text/plain">
+        <form action="email.php" method="post">
 
             Name: <input type="text" name="name"><br>
 
@@ -44,13 +44,6 @@
             <input type="reset" value="Reset">
             </form>
     </div>
-
-    <?php
-        $name = echo $_GET["name"];
-        $email = echo $_GET["name"];
-        $comment = echo $_GET["comment"];
-
-    ?>
 
     </body>
 </html>
