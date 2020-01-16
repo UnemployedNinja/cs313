@@ -5,9 +5,9 @@ echo "Email was sent. Thank you " . $name;
     if(isset($_POST['submit'])) {
 
         $myEmail = "phi13025@byui.edu";      // My email
-        $name = echo $_GET["name"];          // Sender name
-        $email = echo $_GET["email"];        // Sender email
-        $comment = echo $_GET["comment"];    // Sender comments
+        $name = $_POST["name"];          // Sender name
+        $email = $_POST["email"];        // Sender email
+        $comment = $_POST["comment"];    // Sender comments
         $subject = "Assignment Homepage";
 
         // mail($myEmail,$subject,$comment,$email);
