@@ -12,7 +12,7 @@
 
         // mail($myEmail,$subject,$comment,$email);
         // mail($email,$subject,$name,$myEmail); // Send copy to sender
-        // echo "Email was sent. Thank you " . $name;
+        echo "Email was sent. Thank you " . $name;
 
     }
 
