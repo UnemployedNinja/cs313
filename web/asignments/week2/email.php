@@ -10,10 +10,10 @@ if($_POST["name"] != "" && $_POST["email"] != "" && $_POST["comment"] != "") {
     $comment = $_POST["comment"];    // Sender comments
     $subject = "Assignment Homepage";
 
-    // mail($myEmail,$subject,$comment,$email);
+    mail($myEmail,$subject,$comment,$email);
     // mail($email,$subject,$name,$myEmail); // Send copy to sender
 
-    echo "And email was sent Shawn. Thank you " . $name;
+    echo "And email was sent Shawn. Thank you for your feedback " . $name;
 
    // header("Location: Assignment Homepage.html");
 
@@ -22,7 +22,6 @@ if($_POST["name"] != "" && $_POST["email"] != "" && $_POST["comment"] != "") {
 }
 echo "<br> <br>";
 echo "Redirecting page...";
-header("Refresh: 5; url=Assignment Homepage.html");
-//header("Location: Assignment Homepage.html");
+header("Refresh: 3; url=Assignment Homepage.html");
     
 ?>
