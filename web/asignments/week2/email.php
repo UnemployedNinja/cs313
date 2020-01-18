@@ -4,15 +4,17 @@
    
 if($_POST["name"] != "" && $_POST["email"] != "" && $_POST["comment"] != "") {
 
-    $to = "shawn13.phillips@gmail.com";      // My email
+    $to = "phi13025@byui.edu";      // My email
     $name = $_POST["name"];          // Sender name
     $email = $_POST["email"];        // Sender email
     $comment = $_POST["comment"];    // Sender comments
     $subject = "Assignment Homepage HTML email";
 
-    $headers = "MIME-Version: 1.0" . "\r\n";
-    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-    $headers .= "From: " . $email . "\r\n";
+    // $headers = "MIME-Version: 1.0" . "\r\n";
+    // $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    // $headers .= "From: " . $email . "\r\n";
+
+    $headers = "From: HTML " . "\r\n" . "CC: " . $email;
 
     mail($to,$subject,$comment,$headers);
     // mail($email,$subject,$name,$myEmail); // Send copy to sender
