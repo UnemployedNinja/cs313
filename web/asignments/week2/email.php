@@ -22,6 +22,6 @@ if($_POST["name"] != "" && $_POST["email"] != "" && $_POST["comment"] != "") {
 }
 echo "<br> <br>";
 echo "Redirecting page...";
-header("Refresh: 3; Location: Assignment Homepage.html");
+header("Location: Assignment Homepage.html");
     
 ?>
