@@ -10,7 +10,7 @@ if($_POST["name"] != "" && $_POST["email"] != "" && $_POST["comment"] != "") {
     $comment = $_POST["comment"];    // Sender comments
     $subject = "Assignment Homepage";
 
-    mail($myEmail,$subject,$comment,$email);
+    @mail($myEmail,$subject,$comment,$email);
     // mail($email,$subject,$name,$myEmail); // Send copy to sender
 
     echo "And email was sent Shawn. Thank you for your feedback " . $name;
