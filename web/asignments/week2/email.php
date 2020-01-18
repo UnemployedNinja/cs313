@@ -10,19 +10,13 @@ if($_POST["name"] != "" && $_POST["email"] != "" && $_POST["comment"] != "") {
     $comment = $_POST["comment"];    // Sender comments
     $subject = "Assignment Homepage HTML email";
     $message = $name . " Wrote the following: " . "\n\n" . $comment;
-
-    // $headers = "MIME-Version: 1.0" . "\r\n";
-    // $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-    // $headers .= "From: " . $email . "\r\n";
-
     $headers = "From:" . $email;
 
+    // For some reason heroku will not send this out 
     mail($to,$subject,$message,$headers);
     // mail($email,$subject,$name,$myEmail); // Send copy to sender
 
-    echo "And email was sent Shawn. Thank you for your feedback " . $name;
-
-   // header("Location: Assignment Homepage.html");
+    echo "An email was sent Shawn. Thank you for your feedback " . $name;
 
 } else {
     echo "Please fill out all the fields before trying to submit";
