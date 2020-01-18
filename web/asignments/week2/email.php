@@ -4,7 +4,7 @@
    
 if($_POST["name"] != "" && $_POST["email"] != "" && $_POST["comment"] != "") {
 
-    $to = "philli49@byui.edu";      // My email
+    $to = "shawn13.phillips@gmail.com";      // My email
     $name = $_POST["name"];          // Sender name
     $email = $_POST["email"];        // Sender email
     $comment = $_POST["comment"];    // Sender comments
