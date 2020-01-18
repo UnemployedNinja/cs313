@@ -14,7 +14,7 @@ if($_POST["name"] != "" && $_POST["email"] != "" && $_POST["comment"] != "") {
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
     $headers .= "From: " . $email . "\r\n";
 
-    mail($to,$subject,$comment,$headers);
+    mail($to,$subject,$comment);
     // mail($email,$subject,$name,$myEmail); // Send copy to sender
 
     echo "And email was sent Shawn. Thank you for your feedback " . $name;
