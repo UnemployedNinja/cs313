@@ -2,6 +2,7 @@
 
 // https://stackoverflow.com/questions/18379238/send-email-with-php-from-html-form-on-submit-with-the-same-script
    
+if($_POST["name"] != "" || $_POST["email"] != "" || $_POST["comment"] != "") {
 
     $myEmail = "phi13025@byui.edu";      // My email
     $name = $_POST["name"];          // Sender name
@@ -15,5 +16,11 @@
     echo "And email was sent Shawn. Thank you " . $name;
 
    // header("Location: Assignment Homepage.html");
+
+} else {
+    echo "Please fill out all the fields before trying to submit";
+}
+
+    
         
 ?>
