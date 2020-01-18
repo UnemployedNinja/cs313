@@ -12,7 +12,7 @@ if($_POST["name"] != "" && $_POST["email"] != "" && $_POST["comment"] != "") {
     $message = $name . " Wrote the following: " . "\n\n" . $comment;
     $headers = "From:" . $email;
 
-    // For some reason heroku will not send this out 
+    // For some reason heroku blocks this interface  
     mail($to,$subject,$message,$headers);
     // mail($email,$subject,$name,$myEmail); // Send copy to sender
 
