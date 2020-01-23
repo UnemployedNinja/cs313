@@ -4,14 +4,17 @@
 
 <?php
 
-$totalCost; 
+if(!isset($_POST['submit'])) {
+    header("url=browse.html");
+} else {
 
-foreach(htmlspecialchars($_POST['season']) as $value) {
-    echo array_sum($_POST['season']);
-        //$total += $value;
+
+    foreach(htmlspecialchars($_POST['season']) as $value) {
+        $totalCost += $value;
+    }
+
+    echo "Your total cost is $totalCost <br><br>"; 
 }
-
-echo "Your total cost is $total <br><br>"; 
 
 ?>
 
