@@ -4,9 +4,9 @@
 
 <?php
 
-if(!isset($_POST['submit'])) {
-    header("url=browse.html");
-} else {
+// if(!isset($_POST['submit'])) {
+//     header("url=browse.html");
+// } else {
 
 
     foreach(htmlspecialchars($_POST['season']) as $value) {
@@ -14,7 +14,7 @@ if(!isset($_POST['submit'])) {
     }
 
     echo "Your total cost is $totalCost <br><br>"; 
-}
+//}
 
 ?>
 
