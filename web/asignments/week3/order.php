@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
-<body>
+<head>
+        <link rel="stylesheet" href="ShopHome.css">
+        <title>Browse</title>
+    </head>
+    
+    <body>
+        
+        <ul>
+            <li><a href="ShopHome.html">Home</a></li>
+            <li><a class="active" href="browse.html">Browse</a></li>
+        </ul>
 
 <?php
 
@@ -9,8 +19,9 @@
 // } else {
 
 
-    foreach(htmlspecialchars($_POST['season']) as $value) {
+    foreach(htmlspecialchars($_POST['season[]']) as $value) {
         $totalCost += $value;
+        print_r($value);
     }
 
     echo "Your total cost is $totalCost <br><br>"; 
