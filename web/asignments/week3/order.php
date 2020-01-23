@@ -2,7 +2,7 @@
 <html>
 <head>
         <link rel="stylesheet" href="ShopHome.css">
-        <title>Browse</title>
+        <title>Confirm Order</title>
     </head>
     
     <body>
@@ -11,6 +11,9 @@
             <li><a href="ShopHome.html">Home</a></li>
             <li><a class="active" href="browse.html">Browse</a></li>
         </ul>
+        <h1>Confirm Order</h1>
+        <br>
+        <br>
 
 <?php
 
