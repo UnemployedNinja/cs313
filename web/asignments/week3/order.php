@@ -18,7 +18,7 @@
 <?php
 
     if(!empty($_POST['season'])) {
-        foreach(htmlspecialchars($_POST['season']) as $value) {
+        foreach($_POST['season'] as $value) {
             echo $value;
             // echo "$value <br><br>";
             // $totalCost += $value;
