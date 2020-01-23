@@ -11,9 +11,9 @@
             <li><a href="ShopHome.html">Home</a></li>
             <li><a class="active" href="browse.html">Browse</a></li>
         </ul>
+        <br><br>
         <h1>Confirm Order</h1>
-        <br>
-        <br>
+        <br><br>
 
 <?php
 
