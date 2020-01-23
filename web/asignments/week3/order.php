@@ -19,10 +19,7 @@
 
     if(!empty($_POST['season'])) {
         foreach($_POST['season'] as $value) {
-            echo $value;
-            // echo "$value <br><br>";
             $totalCost += $value;
-            // print_r($value);
         }
     } else {
         header("url=browse.html");
