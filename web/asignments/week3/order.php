@@ -22,7 +22,8 @@
 // } else {
 
 
-    foreach(htmlspecialchars($_POST['season[]']) as $value) {
+    foreach(htmlspecialchars($_POST['season']) as $value) {
+        echo "$value <br><br>";
         $totalCost += $value;
         print_r($value);
     }
