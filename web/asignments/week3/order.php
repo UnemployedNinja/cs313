@@ -6,8 +6,9 @@
 
 $totalCost; 
 
-foreach($_POST['season'] as $value) {
-    $total += $value;
+foreach(htmlspecialchars($_POST['season']) as $value) {
+    echo array_sum($_POST['season']);
+        //$total += $value;
 }
 
 echo "Your total cost is $total <br><br>"; 
