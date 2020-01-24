@@ -18,8 +18,9 @@
 <?php
 
     if(!empty($_POST['season'])) {
-        foreach($_POST['season'] as $value) {
+        //echo "Your items are: <br>";
 
+        foreach($_POST['season'] as $value) {
             echo "Your items are: <br>";
             echo $_POST['id'] . "<br>";
             $totalCost += $value;
