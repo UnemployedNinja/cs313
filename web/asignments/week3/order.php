@@ -2,7 +2,7 @@
 <html>
 <head>
         <link rel="stylesheet" href="ShopHome.css">
-        <title>Confirm Order</title>
+        <title>Order Confirmation</title>
     </head>
     
     <body>
@@ -12,15 +12,16 @@
             <li><a class="active" href="browse.html">Browse</a></li>
         </ul>
         <br><br>
-        <h1>Confirm Order</h1>
+        <h1>Order Confirmation</h1>
         <br><br>
 
 <?php
 
     if(!empty($_POST['season'])) {
         foreach($_POST['season'] as $value) {
+
             echo "Your items are: <br>";
-            echo $_POST . "<br><br>";
+            echo $_POST['id'] . "<br>";
             $totalCost += $value;
         }
     } else {
@@ -32,8 +33,8 @@
 ?>
 
 <form action="thankYou.php" method="POST">
-
-    Would you like to Purchase? <br><br>
+    To Purchase, please give us your shipping address and click submit: <br>
+    <input type="text" name="address"><br><br>
     <input type="submit" value="Purchase">
 
 </form> 
