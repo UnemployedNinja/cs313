@@ -36,9 +36,6 @@
                   $6.98
                 </td>
                 <td>
-                    <a href="https://www.google.com/search?biw=798&bih=751&tbm=isch&sxsrf=ACYBGNS7DMvY3yoggt7dH2TkTpLUqQyEvA%3A1579641632941&sa=1&ei=IGsnXsvmOJC1tAaPtLT4CA&q=tmnt+classic+cartoons+season+1&oq=tmnt+classic+cartoons+season+1&gs_l=img.3..35i39.217382.217382..217806...0.0..0.77.213.3......0....1..gws-wiz-img.yKIUL_Yyu7k&ved=0ahUKEwjL9pzTz5XnAhWQGs0KHQ8aDY8Q4dUDCAc&uact=5#imgrc=tqUHZy_HU17MWM:">
-                    <img src="season1.jpg"> <br>
-                    $6.98
                     <input type="checkbox" name="season[]" value="6.98" accept="season1.jpg" <?php if(in_array("1", $session_products)) ?> />
                 </td>
               </tr>
@@ -51,9 +48,6 @@
                   $6.39
                 </td>
                 <td>
-                <a href="https://www.google.com/search?biw=798&bih=751&tbm=isch&sxsrf=ACYBGNS7DMvY3yoggt7dH2TkTpLUqQyEvA%3A1579641632941&sa=1&ei=IGsnXsvmOJC1tAaPtLT4CA&q=tmnt+classic+cartoons+season+1&oq=tmnt+classic+cartoons+season+1&gs_l=img.3..35i39.217382.217382..217806...0.0..0.77.213.3......0....1..gws-wiz-img.yKIUL_Yyu7k&ved=0ahUKEwjL9pzTz5XnAhWQGs0KHQ8aDY8Q4dUDCAc&uact=5#imgrc=nCpCx6eNM1NLMM:">
-                    <img src="season2.jpg"> <br>
-                $6.39
                     <input type="checkbox" name="season[]" value="6.39" accept="season2.jpg" <?php if(in_array("2", $session_products)) ?> />
                   </td>
                 </tr>
@@ -66,7 +60,7 @@
                     $9.15
                   </td>
                   <td>
-                    <input type="checkbox" id="season3" name="season[]" value="9.15">
+                    <input type="checkbox" name="season[]" value="9.15">
                   </td>
                 </tr>
                 <tr>
@@ -78,7 +72,7 @@
                     $6.35
                   </td>
                   <td>
-                    <input type="checkbox" id="season4" name="season[]" value="6.35">
+                    <input type="checkbox" name="season[]" value="6.35">
                   </td>
                 </tr>
                 <tr>
@@ -90,7 +84,7 @@
                     $8.96
                   </td>
                   <td>
-                    <input type="checkbox" id="season5" name="season[]" value="8.96">
+                    <input type="checkbox" name="season[]" value="8.96">
                   </td>
                 </tr>
                 <tr>
@@ -102,7 +96,7 @@
                     $10.04
                   </td>
                   <td>
-                    <input type="checkbox" id="season6" name="season[]" value="10.04">
+                    <input type="checkbox" name="season[]" value="10.04">
                   </td>
                 </tr>
                 <tr>
@@ -114,7 +108,7 @@
                     $13.89
                   </td>
                   <td>
-                    <input type="checkbox" id="season7" name="season[]" value="13.89">
+                    <input type="checkbox" name="season[]" value="13.89">
                   </td>
                 </tr>
                 <tr>
@@ -126,7 +120,7 @@
                     $6.88
                   </td>
                   <td>
-                    <input type="checkbox" id="season8" name="season[]" value="6.88">
+                    <input type="checkbox name="season[]" value="6.88">
                   </td>
                 </tr>
                 <tr>
@@ -138,7 +132,7 @@
                     $6.39
                   </td>
                   <td>
-                    <input type="checkbox" id="season9" name="season[]" value="6.39">
+                    <input type="checkbox" name="season[]" value="6.39">
                   </td>
                 </tr>
                 <tr>
@@ -150,7 +144,7 @@
                     $7.49
                   </td>
                   <td>
-                    <input type="checkbox" id="season10" name="season[]" value="7.49">
+                    <input type="checkbox" name="season[]" value="7.49">
                   </td>
                 </tr>
             </table>
