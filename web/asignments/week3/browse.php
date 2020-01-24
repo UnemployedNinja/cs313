@@ -36,8 +36,7 @@
                   $6.98
                 </td>
                 <td>
-                    <input type="checkbox" name="season[]" value="6.98" accept="season1.jpg">
-                    <?php $_SESSION["season"] = "season1.jpg"; ?>
+                    <input type="checkbox" name="season[]" value="6.98"> 
                 </td>
               </tr>
               <tr>
