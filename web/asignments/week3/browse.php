@@ -37,7 +37,7 @@
                 </td>
                 <td>
                     <input type="checkbox" name="season[]" value="6.98" accept="season1.jpg">
-                    <?php $_SESSION['season'] = "season1.jpg"; ?>
+                    <?php $_SESSION["season"] = "season1.jpg"; ?>
                 </td>
               </tr>
               <tr>
