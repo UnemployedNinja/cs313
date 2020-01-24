@@ -18,11 +18,11 @@
 <?php
 
     if(!empty($_POST['season'])) {
-        //echo "Your items are: <br>";
+        // echo "Your items are: <br>";
 
         foreach($_POST['season'] as $value) {
             echo "Your items are: <br>";
-            echo $_POST['id'] . "<br>";
+            echo $_SESSION[] . "<br>";
             $totalCost += $value;
         }
     } else {
