@@ -22,7 +22,7 @@
 
         foreach($_POST['season'] as $value) {
             echo "Your items are: <br>";
-            $_SESSION['season'] = $_POST['season'];
+            // $_SESSION['season'] = $_POST['season'];
             echo $_SESSION['season'];
             "<br>";
             $totalCost += $value;
