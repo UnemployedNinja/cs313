@@ -22,7 +22,7 @@
 
         foreach($_POST['season'] as $value) {
             echo "Your items are: <br>";
-            $destination = "upload/" . $_POST['season']['season1.jpg']; 
+            $destination = $_POST['season']['season1.jpg']; 
             // $_SESSION['season'] = $_POST['season'];
             $_SESSION['season'] = $destination;
             echo $_SESSION['season'];
