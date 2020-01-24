@@ -12,9 +12,17 @@ h1 {
 }
 
 img {
-    text-align: left;
-    width: 10px;
-    height: 20px;
+    padding: 5px;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+table, td {
+    border: 1px solid black;
+    text-align: center;
 }
  
 
