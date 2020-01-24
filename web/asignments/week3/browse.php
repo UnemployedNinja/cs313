@@ -39,7 +39,7 @@
                     <a href="https://www.google.com/search?biw=798&bih=751&tbm=isch&sxsrf=ACYBGNS7DMvY3yoggt7dH2TkTpLUqQyEvA%3A1579641632941&sa=1&ei=IGsnXsvmOJC1tAaPtLT4CA&q=tmnt+classic+cartoons+season+1&oq=tmnt+classic+cartoons+season+1&gs_l=img.3..35i39.217382.217382..217806...0.0..0.77.213.3......0....1..gws-wiz-img.yKIUL_Yyu7k&ved=0ahUKEwjL9pzTz5XnAhWQGs0KHQ8aDY8Q4dUDCAc&uact=5#imgrc=tqUHZy_HU17MWM:">
                     <img src="season1.jpg"> <br>
                     $6.98
-                    <input type="checkbox" name="season[]" value="6.98" <?php if(in_array("1", $session_products)) ?> />
+                    <input type="checkbox" name="season[]" value="6.98" accept="season1.jpg" <?php if(in_array("1", $session_products)) ?> />
                 </td>
               </tr>
               <tr>
@@ -54,7 +54,7 @@
                 <a href="https://www.google.com/search?biw=798&bih=751&tbm=isch&sxsrf=ACYBGNS7DMvY3yoggt7dH2TkTpLUqQyEvA%3A1579641632941&sa=1&ei=IGsnXsvmOJC1tAaPtLT4CA&q=tmnt+classic+cartoons+season+1&oq=tmnt+classic+cartoons+season+1&gs_l=img.3..35i39.217382.217382..217806...0.0..0.77.213.3......0....1..gws-wiz-img.yKIUL_Yyu7k&ved=0ahUKEwjL9pzTz5XnAhWQGs0KHQ8aDY8Q4dUDCAc&uact=5#imgrc=nCpCx6eNM1NLMM:">
                     <img src="season2.jpg"> <br>
                 $6.39
-                    <input type="checkbox" id="season2" name="season[]" value="6.39">
+                    <input type="checkbox" name="season[]" value="6.39" accept="season2.jpg" <?php if(in_array("2", $session_products)) ?> />
                   </td>
                 </tr>
                 <tr>
