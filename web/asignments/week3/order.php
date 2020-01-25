@@ -27,10 +27,10 @@
                 echo '<img src="season1.jpg" width="188" height="268">';
                 $cost = "6.98";
                 echo "Price: $cost";
-                echo '<input type="submit" class="button" name="Remove" value="remove" />';
+                echo '<input type="submit" class="button" name=remove" value="Remove" />';
                 echo "<br><hr>";
                 $totalCost += $cost;
-                if(isset($_Post['Remove'])) {
+                if(isset($_Post['remove'])) {
                     unset($_POST['season']);
                     $totalCost -=$cost;
                     header("Refresh:0");
