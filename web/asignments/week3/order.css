@@ -11,12 +11,6 @@ h1 {
     font-size: 40px; 
 }
 
-img {
-    padding: 5px;
-    width: 10;
-    height: 50;
-}
-
 /*https://www.w3schools.com/css/css_navbar.asp*/
 ul {
     position: fixed;

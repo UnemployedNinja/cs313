@@ -113,7 +113,7 @@
 
 <form action="thankYou.php" method="POST">
     To Purchase, please give us your shipping address and click submit: <br>
-    <input type="text" name="address"><br><br>
+    <textarea rows="4" cols="50" name="address" placeholder="Enter Address Here..."></textarea><br><br>
     <input type="submit" value="Purchase">
 
 </form> 
