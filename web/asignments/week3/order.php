@@ -26,8 +26,9 @@
             if($value == 1) {
                 echo '<img src="season1.jpg" width="188" height="268">';
                 $cost = "6.98";
-                echo "Price: $cost <br><hr>";
-                echo '<button class="btn remove">Remove Item</button>';
+                echo "Price: $cost";
+                echo '<button onclick="removeItem($value)">Remove Item</button>';
+                echo "<br><hr>";
                 $totalCost += $cost;
             }
             if($value == 2) {
@@ -90,6 +91,12 @@
     }
 
     echo "Your total cost is $totalCost <br><br>";
+
+
+    function removeItem($value) {
+        $value = 0; 
+        header("Refresh:0");
+    }
 
 ?>
 
