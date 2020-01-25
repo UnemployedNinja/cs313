@@ -24,8 +24,9 @@
 
         foreach($_POST['season'] as $value) {
             if($value == 0) {
-                print '<img src="season1.jpg"> />';
+                print '<img src="season1.jpg">';
                 $cost = "6.98";
+                echo "Price: $cost";
                 $totalCost += $cost;
             }
         }
