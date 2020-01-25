@@ -17,7 +17,6 @@
 
 <?php
 
-
  if(!empty($_POST['season'])) {
 
         $totalCost = 0;
@@ -28,6 +27,7 @@
                 echo '<img src="season1.jpg" width="188" height="268">';
                 $cost = "6.98";
                 echo "Price: $cost <br><hr>";
+                echo '<button class="btn remove">Remove Item</button>';
                 $totalCost += $cost;
             }
             if($value == 2) {
@@ -91,30 +91,12 @@
 
     echo "Your total cost is $totalCost <br><br>";
 
-
-
-
-    // if(!empty($_POST['season'])) {
-    //     // echo "Your items are: <br>";
-
-    //     foreach($_POST['season'] as $value) {
-    //         echo "Your items are: ";
-    //         echo $value;
-    //         echo "<br>";
-    //         $totalCost += $value;
-    //     }
-    // } else {
-    //     header("url=browse.php");
-    // }
-
-    // echo "Your total cost is $totalCost <br><br>";
-
 ?>
 
 <form action="thankYou.php" method="POST">
     To Purchase, please give us your shipping address and click submit: <br>
     <textarea rows="4" cols="50" name="address" placeholder="Enter Address Here..."></textarea><br><br>
-    <input type="submit" value="Purchase">
+    <input type="submit" value="submit">
 
 </form> 
 </body>
