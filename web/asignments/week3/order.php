@@ -27,7 +27,7 @@
                 echo '<img src="season1.jpg" width="188" height="268">';
                 $cost = "6.98";
                 echo "Price: $cost";
-                echo '<button onclick="removeItem($value)">Remove Item</button>';
+                echo '<input type="submit" name="remove" onclick="removeItem()">';
                 echo "<br><hr>";
                 $totalCost += $cost;
             }
@@ -92,12 +92,9 @@
 
     echo "Your total cost is $totalCost <br><br>";
 
-
-    function removeItem($value) {
-        $value = 0; 
-        header("Refresh:0");
+    function removeItem() {
+        unset($_POST['season']);
     }
-
 ?>
 
 <form action="thankYou.php" method="POST">
