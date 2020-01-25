@@ -21,8 +21,8 @@
         // echo "Your items are: <br>";
 
         foreach($_POST['season'] as $value) {
-            echo "Your items are: <br>";
-            echo $_POST['season'];
+            echo "Your items are: ";
+            echo $value;
             "<br>";
             $totalCost += $value;
         }

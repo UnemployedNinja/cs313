@@ -36,7 +36,7 @@
                   $6.98
                 </td>
                 <td>
-                    <input type="checkbox" name="season[]" value="6.98" accept="season1.jpg"> 
+                    <input type="checkbox" name="season[]" value="6.98"> 
                 </td>
               </tr>
               <tr>
@@ -48,7 +48,7 @@
                   $6.39
                 </td>
                 <td>
-                    <input type="checkbox" name="season[]" value="6.39" accept="season2.jpg" <?php if(in_array("2", $session_products)) ?> />
+                    <input type="checkbox" name="season[]" value="6.39">
                   </td>
                 </tr>
                 <tr>
