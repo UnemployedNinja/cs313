@@ -17,10 +17,6 @@
 
 <?php
 
-    if(isset($_POST['season1'])) {
-        $_SESSION['season'] = "https://www.google.com/search?biw=798&bih=751&tbm=isch&sxsrf=ACYBGNRBasQULg_qaIg7oV5M5EaT8alklw%3A1579638985576&sa=1&ei=yWAnXp_oIs2stQaoo67ABA&q=tmnt+logo&oq=tmnt+logo&gs_l=img.3..0l10.4885.5801..6022...0.0..0.309.787.5j1j0j1......0....1..gws-wiz-img.......35i39j0i67j0i131i67.OlDNdiIT3LA&ved=0ahUKEwjf8O7kxZXnAhVNVs0KHaiRC0gQ4dUDCAc&uact=5#imgrc=EIx0inYsyPTb3M:";
-    }
-
     if(!empty($_POST['season'])) {
         // echo "Your items are: <br>";
 
