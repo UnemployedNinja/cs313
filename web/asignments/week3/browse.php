@@ -36,7 +36,8 @@
                   $6.98
                 </td>
                 <td>
-                    <input type="checkbox" name="season[]" value="6.98"> 
+                    <!--input type="checkbox" name="season[]" value="6.98" accept="season1.jpg"--> 
+                    <button name="season1" value="6.98">Add</button>
                 </td>
               </tr>
               <tr>
@@ -48,7 +49,8 @@
                   $6.39
                 </td>
                 <td>
-                    <input type="checkbox" name="season[]" value="6.39" accept="season2.jpg" <?php if(in_array("2", $session_products)) ?> />
+                    <!--input type="checkbox" name="season[]" value="6.39" accept="season2.jpg"-->
+                    <button name="season2" value="6.39">Add</button>
                   </td>
                 </tr>
                 <tr>
@@ -60,7 +62,8 @@
                     $9.15
                   </td>
                   <td>
-                    <input type="checkbox" name="season[]" value="9.15">
+                    <!--input type="checkbox" name="season[]" value="9.15"-->
+                    <button name="season3" value="9.15">Add</button>
                   </td>
                 </tr>
                 <tr>
@@ -72,7 +75,8 @@
                     $6.35
                   </td>
                   <td>
-                    <input type="checkbox" name="season[]" value="6.35">
+                    <!--input type="checkbox" name="season[]" value="6.35"-->
+                    <button name="season4" value="6.35">Add</button>
                   </td>
                 </tr>
                 <tr>
@@ -84,7 +88,8 @@
                     $8.96
                   </td>
                   <td>
-                    <input type="checkbox" name="season[]" value="8.96">
+                    <!--input type="checkbox" name="season[]" value="8.96"-->
+                    <button name="season5" value="8.96">Add</button>
                   </td>
                 </tr>
                 <tr>
@@ -96,7 +101,8 @@
                     $10.04
                   </td>
                   <td>
-                    <input type="checkbox" name="season[]" value="10.04">
+                    <!--input type="checkbox" name="season[]" value="10.04"-->
+                    <button name="season6" value="10.04">Add</button>
                   </td>
                 </tr>
                 <tr>
@@ -108,7 +114,8 @@
                     $13.89
                   </td>
                   <td>
-                    <input type="checkbox" name="season[]" value="13.89">
+                    <!--input type="checkbox" name="season[]" value="13.89"-->
+                    <button name="season7" value="13.89">Add</button>
                   </td>
                 </tr>
                 <tr>
@@ -120,7 +127,8 @@
                     $6.88
                   </td>
                   <td>
-                    <input type="checkbox name="season[]" value="6.88">
+                    <!--input type="checkbox" name="season[]" value="6.88"-->
+                    <button name="season8" value="6.88">Add</button>
                   </td>
                 </tr>
                 <tr>
@@ -132,7 +140,8 @@
                     $6.39
                   </td>
                   <td>
-                    <input type="checkbox" name="season[]" value="6.39">
+                    <!--input type="checkbox" name="season[]" value="6.39"-->
+                    <button name="season9" value="6.39">Add</button>
                   </td>
                 </tr>
                 <tr>
@@ -144,12 +153,13 @@
                     $7.49
                   </td>
                   <td>
-                    <input type="checkbox" name="season[]" value="7.49">
+                    <!--input type="checkbox" name="season[]" value="7.49"-->
+                    <button name="season10" value="7.49">Add</button>
                   </td>
                 </tr>
             </table>
             <br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="View Cart">
           </form>
 
     </body>
