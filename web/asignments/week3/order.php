@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <link rel="stylesheet" href="ShopHome.css">
+        <link rel="stylesheet" href="browse.css">
         <title>Order Confirmation</title>
     </head>
     
