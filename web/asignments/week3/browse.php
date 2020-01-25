@@ -48,7 +48,7 @@
                   $6.39
                 </td>
                 <td>
-                    <input type="checkbox" name="season[]" value="6.39">
+                    <input type="checkbox" name="season[]" value="1">
                   </td>
                 </tr>
                 <tr>
