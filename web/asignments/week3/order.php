@@ -66,6 +66,24 @@
                 echo "Price: $cost <br><hr>";
                 $totalCost += $cost;
             }
+            if($value == 8) {
+                echo '<img src="season8.jpg" width="188" height="268">';
+                $cost = "6.88";
+                echo "Price: $cost <br><hr>";
+                $totalCost += $cost;
+            }
+            if($value == 9) {
+                echo '<img src="season9.jpg" width="188" height="268">';
+                $cost = "6.39";
+                echo "Price: $cost <br><hr>";
+                $totalCost += $cost;
+            }
+            if($value == 10) {
+                echo '<img src="season10.jpg" width="188" height="268">';
+                $cost = "7.49";
+                echo "Price: $cost <br><hr>";
+                $totalCost += $cost;
+            }
         }
     } else {
         header("url=browse.php");
