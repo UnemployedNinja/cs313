@@ -27,9 +27,15 @@
                 echo '<img src="season1.jpg" width="188" height="268">';
                 $cost = "6.98";
                 echo "Price: $cost";
-                echo '<input type="submit" name="remove" onclick="removeItem()">';
+                echo '<input type="submit" class="button" name="remove" value="remove" />';
                 echo "<br><hr>";
                 $totalCost += $cost;
+                if(isset($_Post['remove'])) {
+                    unset($_POST['season']);
+                    $totalCost -=$cost;
+                }
+
+
             }
             if($value == 2) {
                 echo '<img src="season2.jpg" width="188" height="268">';
