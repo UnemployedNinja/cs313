@@ -36,7 +36,7 @@
                   $6.98
                 </td>
                 <td>
-                    <input type="checkbox" name="season[]" value="0"> 
+                    <input type="checkbox" name="season[]" value="1"> 
                 </td>
               </tr>
               <tr>
@@ -48,7 +48,7 @@
                   $6.39
                 </td>
                 <td>
-                    <input type="checkbox" name="season[]" value="1">
+                    <input type="checkbox" name="season[]" value="2">
                   </td>
                 </tr>
                 <tr>
@@ -60,7 +60,7 @@
                     $9.15
                   </td>
                   <td>
-                    <input type="checkbox" name="season[]" value="9.15">
+                    <input type="checkbox" name="season[]" value="3">
                   </td>
                 </tr>
                 <tr>
@@ -72,7 +72,7 @@
                     $6.35
                   </td>
                   <td>
-                    <input type="checkbox" name="season[]" value="6.35">
+                    <input type="checkbox" name="season[]" value="4">
                   </td>
                 </tr>
                 <tr>
@@ -84,7 +84,7 @@
                     $8.96
                   </td>
                   <td>
-                    <input type="checkbox" name="season[]" value="8.96">
+                    <input type="checkbox" name="season[]" value="5">
                   </td>
                 </tr>
                 <tr>
@@ -96,7 +96,7 @@
                     $10.04
                   </td>
                   <td>
-                    <input type="checkbox" name="season[]" value="10.04">
+                    <input type="checkbox" name="season[]" value="6">
                   </td>
                 </tr>
                 <tr>
@@ -108,7 +108,7 @@
                     $13.89
                   </td>
                   <td>
-                    <input type="checkbox" name="season[]" value="13.89">
+                    <input type="checkbox" name="season[]" value="7">
                   </td>
                 </tr>
                 <tr>
@@ -120,7 +120,7 @@
                     $6.88
                   </td>
                   <td>
-                    <input type="checkbox name="season[]" value="6.88">
+                    <input type="checkbox" name="season[]" value="8">
                   </td>
                 </tr>
                 <tr>
@@ -132,7 +132,7 @@
                     $6.39
                   </td>
                   <td>
-                    <input type="checkbox" name="season[]" value="6.39">
+                    <input type="checkbox" name="season[]" value="9">
                   </td>
                 </tr>
                 <tr>
@@ -144,7 +144,7 @@
                     $7.49
                   </td>
                   <td>
-                    <input type="checkbox" name="season[]" value="7.49">
+                    <input type="checkbox" name="season[]" value="10">
                   </td>
                 </tr>
             </table>
