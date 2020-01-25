@@ -31,37 +31,37 @@
                 $totalCost += $cost;
             }
             if($value == 2) {
-                echo '<img src="season2.jpg">';
+                echo '<img src="season2.jpg" width="188" height="268">';
                 $cost = "6.39";
                 echo "Price: $cost <br><hr>";
                 $totalCost += $cost;
             }
             if($value == 3) {
-                echo '<img src="season3.jpg">';
+                echo '<img src="season3.jpg" width="188" height="268">';
                 $cost = "9.15";
                 echo "Price: $cost <br><hr>";
                 $totalCost += $cost;
             }
             if($value == 4) {
-                echo '<img src="season4.jpg">';
+                echo '<img src="season4.jpg" width="188" height="268">';
                 $cost = "6.35";
                 echo "Price: $cost <br><hr>";
                 $totalCost += $cost;
             }
             if($value == 5) {
-                echo '<img src="season5.jpg">';
+                echo '<img src="season5.jpg" width="188" height="268">';
                 $cost = "8.96";
                 echo "Price: $cost <br><hr>";
                 $totalCost += $cost;
             }
             if($value == 6) {
-                echo '<img src="season6.jpg">';
+                echo '<img src="season6.jpg" width="188" height="268">';
                 $cost = "10.04";
                 echo "Price: $cost <br><hr>";
                 $totalCost += $cost;
             }
             if($value == 7) {
-                echo '<img src="season7.jpg">';
+                echo '<img src="season7.jpg" width="188" height="268">';
                 $cost = "13.89";
                 echo "Price: $cost <br><hr>";
                 $totalCost += $cost;
