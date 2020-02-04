@@ -42,7 +42,7 @@
             $response = $client->getResponse();
             
             echo $response->getBody();
-        
+    
         ?>
 
     </body>
