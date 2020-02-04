@@ -7,11 +7,18 @@
     </head>
     
     <body>
-        <ul>
-            <li><a href="ShopHome.html">Home</a></li>
-            <li><a class="active" href="browse.php">Browse</a></li>
-        </ul>
-        <br><br>
+    
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+    </div>
 
         <?php
 
