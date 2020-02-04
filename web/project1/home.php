@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="browse.css">
+        <link rel="stylesheet" href="home.css">
         <title>Browse</title>
     </head>
     
