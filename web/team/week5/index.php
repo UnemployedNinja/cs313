@@ -1,31 +1,29 @@
 <?php
 
-function get_db() {
-
-   $db = NULL;
-
-   try
+   require "dbConnect.php";
+   
+   $db = get_db();
+   $family_members = $db->prepare("SELECT * FROM w5_family_members");
+   $family_members->execute();
+   while ($fRow = $family_members->fetch(PDO::FETCH_ASSOC))
    {
-     $dbUrl = getenv('DATABASE_URL');
-   
-     $dbOpts = parse_url($dbUrl);
-   
-     $dbHost = $dbOpts["host"];
-     $dbPort = $dbOpts["port"];
-     $dbUser = $dbOpts["user"];
-     $dbPassword = $dbOpts["pass"];
-     $dbName = ltrim($dbOpts["path"],'/');
-   
-     $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-   
-     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+      $first_name = $fRow["first_name"];
+      $last_name = $fRow["last_name"];
+      $relationship_id = $fRow["relationship_id"];
+      $relationships = $db->prepare("SELECT description FROM w5_relationships WHERE id = $relationship_id");
+      $relationships->execute();
+      while ($rRow = $relationships->fetch(PDO::FETCH_ASSOC))
+      {
+         $relationship = $rRow["description"];
+      }
+      echo "<p>$first_name $last_name is my $relationship ($relationship_id)</p>";
    }
-   catch (PDOException $ex)
-   {
-     echo 'Error!: ' . $ex->getMessage();
-     die();
-   }
-   return $db;
-}
-
 ?>
+
+
+
+
+
+
+
+
