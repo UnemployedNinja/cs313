@@ -1,12 +1,35 @@
 body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
 
-    background-color: white;
-
-  }
-  
 h1 {
-  
-    color: black;
-    text-align: center;
-    font-size: 40px; 
+  text-align: center;
+}
+
+table {
+  font-size: 15px;
+}
+
+th {
+  font-size: 20px;
+}
+
+div {
+  width: 300;
+  border: 2px solid #000000;
+  padding: 25px;
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+div.container4 {
+  height: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); 
 }

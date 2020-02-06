@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="browse.css">
-        <title>Login</title>
-    </head>
+<head> 
+    <meta charset = "utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     
-    <body>
-        
+    <script src = "../js/login.js"></script>
+    <link rel = "stylesheet" href = "login.css">
+    <title>Login To Campaign Update</title>
+</head>
+<body onload = "setFocus()">
 
+    <div class = container4>
+        <form id = "loginForm">
+        <table align = "center" width = "25%">
 
-    </body>
-   
+            <tr>
+                <th colspan = "3"><center><b>BYU-Idaho Login</b></center></th>
+            </tr>
+
+            <tr>
+                <td>Username:</td>
+                <td><input type = "text" name = "username" id = "usernameID" placeholder = "Username" required></td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td><input type = "password" name = "password" id = "passwordID" placeholder = "Password" required></td>
+                <td><input type="checkbox" onclick = "hidePassword()"></td>
+                <td>View</td>
+            </tr>
+
+            <tr>
+                <td><input type="Reset"></td>
+                <td><button type = "submit" onclick = "loginRequest()">Login</button></td>
+            </tr>
+            
+        </table>
+        </form>
+    </div>
+</body>
+
 </html>
