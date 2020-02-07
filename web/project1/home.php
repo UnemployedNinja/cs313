@@ -14,11 +14,15 @@
             <div class="search-container">
 
                 <form action="" method="GET">
+
                     <label for = "channel">Pick Channel: </label>
-                    <input type = "radio" name = "movie" id = "movie" value = "movie"> Movie
-                    <input type = "radio" name = "tv" id = "tv" value = "tv"> TV
+
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+
                     <input type="text" placeholder="Search.." name="search">
                     <button type="submit" name="submit">Submit</button>
+
                 </form>
             </div>
     </div>
