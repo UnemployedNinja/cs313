@@ -17,10 +17,14 @@
 
                     <label for = "channel">Pick Channel: </label>
 
-                    <input type="radio" name="channel" value="movie"> Movie
-                    <input type="radio" name="channel" value="tv"> TV
+                    <select name="channel" required>
+                        <option value="movie" selected="selected">Movie
+                        </option>
+                        <option value="tv">TV Show
+                        </option>
+                    </select>
 
-                    <input type="text" placeholder="Search.." name="search">
+                    <input type="text" placeholder="Search.." name="search" required>
                     <button type="submit" name="submit">Submit</button>
 
                 </form>
@@ -30,6 +34,7 @@
         <?php
             
             include_once "api/api_popular.php";
+
             foreach($popular->results as $p){
                 echo '<li><a href="movie.php?id=' . $p->id . '"><img src="'.$imgurl_1.''. $p->poster_path . '"><h4>' . $p->original_title . " (" . substr($p->release_date, 0, 4) . ")</h4><h5><em> Rate : " . $p->vote_average . " | Vote : " . $p->vote_count . " | Popularity : " . round($p->popularity) . "</em></h5></a></li>";
             }
