@@ -17,8 +17,8 @@
 
                     <label for = "channel">Pick Channel: </label>
 
-                    <input type="radio" name="gender" value="male"> Male
-                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="channel" value="movie"> Movie
+                    <input type="radio" name="channel" value="tv"> TV
 
                     <input type="text" placeholder="Search.." name="search">
                     <button type="submit" name="submit">Submit</button>
