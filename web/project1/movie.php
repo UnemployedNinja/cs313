@@ -1,7 +1,7 @@
 <?php
-  include "info.php";
+    include "info.php";
   
-  $id_movie = $_GET['id'];
+    $id_movie = $_GET['id'];
     include_once "api/api_movie_id.php";
     include_once "api/api_movie_video_id.php";
     include_once "api/api_movie_similar.php";
@@ -9,21 +9,23 @@
   
 ?>
 
-    <?php 
+<?php 
     if(isset($_GET['id'])){
     $id_movie = $_GET['id']; 
-    ?>
+?>
+
     <h1><?php echo $movie_id->original_title ?></h1>
-    <?php
-      echo "<h5>~ ".$movie_id->tagline." ~</h5>";
-    ?>
 
-    <?php 
+<?php
+    echo "<h5>~ ".$movie_id->tagline." ~</h5>";
+?>
 
-      foreach($movie_video_id->results as $video){
-                    echo '<iframe width="560" height="315" src="'."https://www.youtube.com/embed/".$video->key.'" frameborder="0" allowfullscreen></iframe>';
-      }
-     ?>"
+<?php 
+
+    foreach($movie_video_id->results as $video){
+            echo '<iframe width="560" height="315" src="'."https://www.youtube.com/embed/".$video->key.'" frameborder="0" allowfullscreen></iframe>';
+    }
+?>"
 
     <hr>
           <img src="<?php echo $imgurl_2 ?><?php echo $movie_id->poster_path ?>">
@@ -57,21 +59,6 @@
           <p>Vote Count : <?php echo $movie_id->vote_count ?></p>
 
     <hr>
-    <h3>Similar Movies</h3>
-      <ul>
-      <?php
-        $count = 4;
-        $output=""; 
-        foreach($movie_similar_id->results as $sim){
-          $output.='<li><a href="movie.php?id='.$sim->id.'"><img src="http://image.tmdb.org/t/p/w300'.$sim->backdrop_path.'"><h5>'.$sim->title.'</h5></a></li>';
-          if($count <=0){
-            break;
-            $count--;
-          }
-        }
-        echo $output;
-      ?>
-      </ul>
  
     <?php 
     } else{
