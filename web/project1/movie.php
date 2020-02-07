@@ -4,7 +4,6 @@
     $id_movie = $_GET['id'];
     include_once "api/api_movie_id.php";
     include_once "api/api_movie_video_id.php";
-    include_once "api/api_movie_similar.php";
     $title = "Detail Movie (".$movie_id->original_title.")";
   
 ?>
