@@ -15,8 +15,8 @@
 
                 <form action="" method="GET">
                     <label for = "channel">Pick Channel: </label>
-                    <input type = "radio" name = "movie" id = "movie" checked>Movie
-                    <input type = "radio" name = "tv" id = "tv" checked>TV
+                    <input type = "radio" name = "movie" id = "movie">Movie
+                    <input type = "radio" name = "tv" id = "tv">TV
                     <input type="text" placeholder="Search.." name="search">
                     <button type="submit" name="submit">Submit</button>
                 </form>
@@ -25,14 +25,13 @@
 
         <?php
 
-            if(!$_GET['submit']) 
-            {
+           
             
-                include_once "api/api_toprated.php";
-                foreach($toprated->results as $p){
-                    echo '<li><a href="movie.php?id=' . $p->id . '"><img src="http://image.tmdb.org/t/p/w500'. $p->poster_path . '"><h4>' . $p->original_title . " (" . substr($p->release_date, 0, 4) . ")</h4><h5><em>Rate : " . $p->vote_average . " |  Vote : " . $p->vote_count . "</em></h5></a></li>";
-                }
-            } /// delete if working on search 
+            include_once "api/api_popular.php";
+            foreach($popular->results as $p){
+                echo '<li><a href="movie.php?id=' . $p->id . '"><img src="'.$imgurl_1.''. $p->poster_path . '"><h4>' . $p->original_title . " (" . substr($p->release_date, 0, 4) . ")</h4><h5><em> Rate : " . $p->vote_average . " | Vote : " . $p->vote_count . " | Popularity : " . round($p->popularity) . "</em></h5></a></li>";
+            }
+           
             // } else {
 
             //     $input = $_GET['search'];
