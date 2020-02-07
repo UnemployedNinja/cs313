@@ -33,9 +33,10 @@
 
         <?php
             
+            echo "look at this stuff";
+            
             include "info.php";
             $title="Popular Movies";
-            include_once "header.php";
 
             include_once "api/api_popular.php";
             foreach($popular->results as $p){
