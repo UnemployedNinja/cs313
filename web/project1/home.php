@@ -36,8 +36,8 @@
            include "info.php";
            $title="Couldn't think of a title ";
 
-            include_once "api/api_toprated.php";
-            foreach($toprated->results as $p){
+            include_once "api/api_popular.php";
+            foreach($popular->results as $p){
                 echo '<br><li><a href="movie.php?id=' . $p->id . '"><img src="http://image.tmdb.org/t/p/w200'. $p->poster_path . '"><h4>' . $p->original_title . " (" . substr($p->release_date, 0, 4) . ")</h4><h5><em>Rate : " . $p->vote_average . " |  Vote : " . $p->vote_count . "</em></h5></a></li><hr>";
             }
 
