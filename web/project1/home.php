@@ -2,17 +2,21 @@
 <html>
     <head>
         <link rel="stylesheet" href="home.css">
-        <title>Browse</title>
+        <title>Movies List</title>
     </head>
     
     <body>
     
     <div class="topnav">
         <a class="active" href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="mylist.php">Movie/Series List</a>
+        <a href="login.html">Login</a>
             <div class="search-container">
+
                 <form action="" method="GET">
+                    <label for = "channel">Pick Channel: </label>
+                    <input type = "radio" name = "movie" id = "movie" checked>Movie
+                    <input type = "radio" name = "tv" id = "tv" checked>TV
                     <input type="text" placeholder="Search.." name="search">
                     <button type="submit" name="submit">Submit</button>
                 </form>
