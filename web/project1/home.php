@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -22,34 +21,47 @@
 
         <?php
 
-            $curl = curl_init();
-
-            curl_setopt_array($curl, array(
-	            CURLOPT_URL => "https://movie-database-imdb-alternative.p.rapidapi.com/?page=1&r=json&s=Avengers%20Endgame",
-	            CURLOPT_RETURNTRANSFER => true,
-	            CURLOPT_FOLLOWLOCATION => true,
-	            CURLOPT_ENCODING => "",
-	            CURLOPT_MAXREDIRS => 10,
-	            CURLOPT_TIMEOUT => 30,
-	            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-	            CURLOPT_CUSTOMREQUEST => "GET",
-	            CURLOPT_HTTPHEADER => array(
-		            "x-rapidapi-host: movie-database-imdb-alternative.p.rapidapi.com",
-		            "x-rapidapi-key: SIGN-UP-FOR-KEY"
-	            ),
-            ));
-
-            $response = curl_exec($curl);
-            $err = curl_error($curl);
-
-            curl_close($curl);
-
-            if ($err) {
-	            echo "cURL Error #:" . $err;
+            if(!$_GET['submit']) 
+            {
+            
+                include_once "api/api_toprated.php";
+                foreach($toprated->results as $p){
+                    echo '<li><a href="movie.php?id=' . $p->id . '"><img src="http://image.tmdb.org/t/p/w500'. $p->poster_path . '"><h4>' . $p->original_title . " (" . substr($p->release_date, 0, 4) . ")</h4><h5><em>Rate : " . $p->vote_average . " |  Vote : " . $p->vote_count . "</em></h5></a></li>";
+                }
             } else {
-	            echo $response;
-            }
 
+                $input = $_GET['search'];
+                $channel = $_GET['channel'];
+                $search = $input;
+           
+                include_once "api/api_search.php";
+
+                foreach($search->results as $results){
+
+                    $title = $results->original_name;
+                    $id = $results->id;
+                    $release = $results->first_air_date;
+
+                    if (!empty($release) && !is_null($release)){
+
+                        $year = $tempyear[0];
+                        if (!is_null($year)){
+                            $title = $title.' ('.$year.')';
+                        }
+                    }
+
+                    $backdrop = $results->backdrop_path;
+
+                    if (!empty($backdrop) && !is_null($backdrop)){
+
+                        echo "No Image ";
+
+                    } else {
+                        $backdrop = 'http://image.tmdb.org/t/p/w300'.$backdrop;
+                    }
+                    echo '<li><a href="tvshow.php?id=' . $id . '"><img src="'.$backdrop.'"><h4>'.$title.'</h4></a></li>';
+                }
+            }
     
         ?>
 

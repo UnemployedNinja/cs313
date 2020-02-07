@@ -1,23 +1,31 @@
-CREATE TABLE series_list
+DROP TABLE list;
+DROP TABLE user_profile;
+Drop TABLE movie;
+DROP TABLE episode_tracker; 
+
+CREATE TABLE list
 ( id                SERIAL           NOT NULL PRIMARY KEY
-, series_title      VARCHAR(100)     NOT NULL
+, user_id           VARCHAR(100)     NOT NULL REFERENCES user_profile(id)
+, movie_id          INT              NOT NULL REFERENCES movie(id)       
 );
 
 CREATE TABLE user_profile
 ( id                SERIAL           NOT NULL PRIMARY KEY
 , username          VARCHAR(50)      NOT NULL
 , password          VARCHAR(50)      NOT NULL
-, series_id       INT              NOT NULL REFERENCES series_list(id) -- no size because this could be really long
 );
 
-CREATE TABLE movie_list
+CREATE TABLE movie
 ( id                SERIAL           NOT NULL PRIMARY KEY
-, movie_title       VARCHAR(100)     NOT NULL
+, title             VARCHAR(100)     NOT NULL
+, year              INT              NOT NULL
+, cover             VARBINARY(max)   NOT NULL
 );
 
 CREATE TABLE episode_tracker
 ( id                SERIAL           NOT NULL PRIMARY KEY
-, series_id         INT              NOT NULL REFERENCES series_list(id)
+, user_id           INT              NOT NULL REFERENCES user_profile(id)
+, movie_id          INT              NOT NULL REFERENCES movie(id)
 , season            INT              NOT NULL
 , episode           INT              NOT NULL
 );
