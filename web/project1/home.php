@@ -28,8 +28,6 @@
     </div>
 
         <?php
-
-           
             
             include_once "api/api_popular.php";
             foreach($popular->results as $p){
