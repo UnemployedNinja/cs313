@@ -1,5 +1,7 @@
 <?php
 
+    $apikey = "ef7339152eff424955433540cf591fc4";
+    
     $ct = curl_init();
     curl_setopt($ct, CURLOPT_URL, "http://api.themoviedb.org/3/movie/top_rated?api_key=" . $apikey);
     curl_setopt($ct, CURLOPT_RETURNTRANSFER, TRUE);
