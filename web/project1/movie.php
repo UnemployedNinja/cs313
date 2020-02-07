@@ -22,7 +22,7 @@
 <?php 
 
     foreach($movie_video_id->results as $video){
-            echo '<iframe width="560" height="315" src="'."https://www.youtube.com/embed/".$video->key.'" frameborder="0" allowfullscreen></iframe>';
+            echo '<iframe width="200" height="100" src="'."https://www.youtube.com/embed/".$video->key.'" frameborder="0" allowfullscreen></iframe>';
     }
 ?>"
 
