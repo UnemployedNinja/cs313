@@ -6,7 +6,7 @@ $sitename = "Movie List";
 $tagline = "Info Movie List";
 // URL?
 
-$imgurl_1 = "http://image.tmdb.org/t/p/w200";
-$imgurl_2 = "http://image.tmdb.org/t/p/w100";
+$imgurl_1 = "http://image.tmdb.org/t/p/w2";
+$imgurl_2 = "http://image.tmdb.org/t/p/w1";
 
 ?>
