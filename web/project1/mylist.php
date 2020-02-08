@@ -11,7 +11,7 @@
    //    $year = $row["year"];
    //    $image = $row["cover"];
    //    echo "$title<br>$year<br><img src='$image'>";
-   }
+   // }
 ?>
 
 <?php
@@ -21,7 +21,7 @@
 
    $w5_event = $db->prepare("SELECT * FROM w5_event");
    $w5_event->execute();
-   
+
    while ($row = $w5_event->fetch(PDO::FETCH_ASSOC))
    {
       $name = $row["name"];
