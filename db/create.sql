@@ -13,7 +13,7 @@ CREATE TABLE movie
 ( id                SERIAL           NOT NULL PRIMARY KEY
 , title             VARCHAR(100)     NOT NULL
 , year              INT              NOT NULL
-, cover             bytea            NOT NULL
+, cover             VARCHAR(500)     NOT NULL
 );
 
 CREATE TABLE list
