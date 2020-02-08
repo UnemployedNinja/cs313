@@ -1,15 +1,14 @@
 <?php
 
-   include “dbConnect.php”;
-   $db = get_db();
+   require "dbConnect.php";
 
-   $movie = $db->prepare('SELECT * FROM movie'); 
-   $movie->execute();
-   while ($row = $movie->fetch(PDO::FETCH_ASSOC))
+   $db = get_db();
+   $w5_event = $db->prepare("SELECT * FROM w5_event");
+   $w5_event->execute();
+   while ($row = $w5_event->fetch(PDO::FETCH_ASSOC))
    {
-      echo "in while";
-      $name = $row[“name”];
-      $image = $row[“image”];
-      echo "$name<br><img src=‘$image’>";
+      $name = $row["name"];
+      $image = $row["image"];
+      echo "$name<br><img src='$image'>";
    }
 ?>
