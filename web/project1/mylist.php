@@ -1,8 +1,8 @@
 <?php
    require “dbConnect.php”;
    $db = get_db();
-   
-   $w5_event = $db->prepare(“SELECT * FROM list”); 
+
+   $w5_event = $db->prepare(“SELECT * FROM movie”); 
    $w5_event->execute();
    while ($row = $w5_event->fetch(PDO::FETCH_ASSOC))
    {
