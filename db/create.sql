@@ -3,12 +3,6 @@ DROP TABLE user_profile;
 Drop TABLE movie;
 DROP TABLE episode_tracker; 
 
-CREATE TABLE list
-( id                SERIAL           NOT NULL PRIMARY KEY
-, user_id           VARCHAR(100)     NOT NULL REFERENCES user_profile(id)
-, movie_id          INT              NOT NULL REFERENCES movie(id)       
-);
-
 CREATE TABLE user_profile
 ( id                SERIAL           NOT NULL PRIMARY KEY
 , username          VARCHAR(50)      NOT NULL
@@ -19,7 +13,13 @@ CREATE TABLE movie
 ( id                SERIAL           NOT NULL PRIMARY KEY
 , title             VARCHAR(100)     NOT NULL
 , year              INT              NOT NULL
-, cover             VARBINARY(max)   NOT NULL
+, cover             bytea            NOT NULL
+);
+
+CREATE TABLE list
+( id                SERIAL           NOT NULL PRIMARY KEY
+, user_id           INT              NOT NULL REFERENCES user_profile(id)
+, movie_id          INT              NOT NULL REFERENCES movie(id)       
 );
 
 CREATE TABLE episode_tracker
