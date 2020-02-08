@@ -20,7 +20,7 @@ INSERT INTO movie ( title
                   , cover) 
            VALUES ( 'Ninja Tutles'
                   , '1994'
-                  , '/cs313-php/web/asignments/week3/season1.jpg');
+                  , 'https://www.google.com/search?q=tmnt+season+1&tbm=isch&sxsrf=ACYBGNTfgb0gI5MxpND6PQ9h8y7IsvP4Vw:1581128730233&source=lnms&sa=X&ved=0ahUKEwj32rzC88DnAhViOX0KHXAMAhcQ_AUIswIoAQ&biw=1280&bih=885#imgrc=tqUHZy_HU17MWM');
 
 ---------- POPULATE THE list TABLE ----------
 INSERT INTO list ( user_id
