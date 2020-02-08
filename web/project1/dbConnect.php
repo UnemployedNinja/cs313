@@ -3,7 +3,7 @@
 function get_db() {
 
     $db = NULL;
-    echo 'in dbConnect.php';
+    
     try
     {
         $dbUrl = getenv('DATABASE_URL');

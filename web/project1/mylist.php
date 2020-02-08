@@ -9,6 +9,6 @@
       echo "in while";
       $name = $row[“name”];
       $image = $row[“image”];
-      echo '$name<br><img src=‘$image’>';
+      echo "$name<br><img src=‘$image’>";
    }
 ?>
