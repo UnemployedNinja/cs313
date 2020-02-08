@@ -1,5 +1,6 @@
 <?php
-   require “dbConnect.php”;
+
+   include “dbConnect.php”;
    $db = get_db();
 
    $movie = $db->prepare('SELECT * FROM movie'); 
