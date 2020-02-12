@@ -32,7 +32,6 @@
     </div>
 
     <?php
-        
 
         $input = $_GET['search'];
         $channel = $_GET['channel'];
@@ -61,7 +60,7 @@
 				    }
                 }
                         
-                $backdrop 	= $results->backdrop_path;
+                $backdrop = $results->backdrop_path;
                         
 			    if (empty($backdrop) && is_null($backdrop)){
 
@@ -86,8 +85,8 @@
                         
 			    if (!empty($release) && !is_null($release)){
 
-				    $tempyear 	= explode("-", $release);
-                    $year 		= $tempyear[0];
+				    $tempyear = explode("-", $release);
+                    $year = $tempyear[0];
                             
 				    if (!is_null($year)){
 					    $title = $title.' ('.$year.')';
