@@ -65,7 +65,8 @@
                         
 			    if (empty($backdrop) && is_null($backdrop)){
 
-                    $backdrop =  dirname($_SERVER['PHP_SELF']).'/image/no-gambar.jpg';
+                    // $backdrop =  dirname($_SERVER['PHP_SELF']).'/image/no-gambar.jpg';
+                    echo "No image to display";
                             
 			    } else {
 
@@ -97,8 +98,8 @@
                         
 			    if (empty($backdrop) && is_null($backdrop)){
 
-                    $backdrop = $pathloc.'image/no-backdrop.png';
-                            
+                    //$backdrop = $pathloc.'image/no-backdrop.png';
+                      echo "No image to display";       
 			    } else {
 				    $backdrop = 'http://image.tmdb.org/t/p/w300'.$backdrop;
 			    }
