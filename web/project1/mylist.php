@@ -47,6 +47,7 @@
 
 <?php
 
+   echo "<br>";
    require "dbConnect.php";
 
    $db = get_db();
