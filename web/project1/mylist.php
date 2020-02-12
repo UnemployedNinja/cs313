@@ -13,6 +13,32 @@
    //    echo "$name<br><img src='$image'>";
    // }
 ?>
+<!DOCTYPE html>
+<body>
+
+<div class="topnav">
+   <a class="active" href="#home">Home</a>
+   <a href="mylist.php">Movie/Series List</a>
+   <a href="login.html">Login</a>
+      <div class="search-container">
+
+         <form action="search.php" method="GET">
+
+            <label for = "channel">Pick Channel: </label>
+
+            <select name="channel" required>
+            <option value="movie" selected="selected">Movie
+            </option>
+            <option value="tv">TV Show
+            </option>
+            </select>
+
+            <input type="text" placeholder="Search.." name="search" required>
+            <button type="submit" name="submit">Submit</button>
+
+         </form>
+      </div>
+</div>
 
 <?php
 
