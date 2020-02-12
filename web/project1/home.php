@@ -35,7 +35,7 @@
             
             // Loads up the most popular Movies
             include "info.php";
-            $title="Couldn't think of a title ";
+            $title="Movie List";
 
             include_once "api/api_popular.php";
             foreach($popular->results as $p){
