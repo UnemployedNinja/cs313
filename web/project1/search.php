@@ -104,6 +104,8 @@
 			    }
 			    echo '<li><a href="tvshow.php?id=' . $id . '"><img src="'.$backdrop.'"><h4>'.$title.'</h4></a></li>';
             }
+        }
+   
                 
         ?>
 
