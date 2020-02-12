@@ -14,6 +14,11 @@
    // }
 ?>
 <!DOCTYPE html>
+<head>
+   <link rel="stylesheet" href="home.css">
+   <title>Movies List</title>
+</head>
+
 <body>
 
 <div class="topnav">
