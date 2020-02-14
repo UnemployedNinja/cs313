@@ -6,7 +6,7 @@
     <link rel = "stylesheet" href = "login.css">
     <title>Login</title>
 </head>
-<body onload = "setFocus()">
+<body>
 
     <div class = container4>
         <form id = "loginForm" method = "GET">
