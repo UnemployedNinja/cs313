@@ -67,10 +67,10 @@
 
               if($_SESSION['username'] == $username) {
                   if($_SESSION['password'] == $password) {
-                    header('location: home.php');
+                    header("location: ./home.php");
                   }
               } else {
-               // echo "<script type='text/javascript'>alert('Invalid Username or Password!');</script>";
+                echo "Invalid Username or Password!";
               }
             } 
 
