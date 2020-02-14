@@ -1,5 +1,8 @@
-<!DOCTYPE html>
-<html>
+<?php
+    require("dbConnect.php");
+    $db = get_db();
+?>
+
 <head> 
     <meta charset = "utf-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
@@ -37,8 +40,6 @@
     </div>
 
     <?php
-        require("dbConnect.php");
-        $db = get_db();
 
         if (isset($_GET['login'])) {
             loginRequest();
@@ -85,5 +86,3 @@
 
     ?>
 </body>
-
-</html>

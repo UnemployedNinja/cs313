@@ -13,7 +13,7 @@
    //    echo "$name<br><img src='$image'>";
    // }
 ?>
-<!DOCTYPE html>
+
 <head>
    <link rel="stylesheet" href="home.css">
    <title>Movies List</title>

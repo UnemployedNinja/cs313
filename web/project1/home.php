@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+
+
     <head>
         <link rel="stylesheet" href="home.css">
         <title>Movies List</title>
@@ -53,4 +53,3 @@
 
     </body>
    
-</html>
