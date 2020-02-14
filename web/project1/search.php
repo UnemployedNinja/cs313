@@ -72,7 +72,7 @@
                     $backdrop = 'http://image.tmdb.org/t/p/w300'.$backdrop;
                             
 			    }
-			    echo '<li><a href="movie.php?id=' . $id . '"><img src="'.$backdrop.'"><h4>'.$title.'</h4></a></li>';
+			    echo '<li><a href="movie.php?id=' . $id . '"><img src="'.$backdrop.'"><h4>'.$title.'</h4></a></li><hr>';
             }
                     
         }elseif($channel == "tv"){
@@ -102,7 +102,7 @@
 			    } else {
 				    $backdrop = 'http://image.tmdb.org/t/p/w300'.$backdrop;
 			    }
-			    echo '<li><a href="tvshow.php?id=' . $id . '"><img src="'.$backdrop.'"><h4>'.$title.'</h4></a></li>';
+			    echo '<li><a href="tvshow.php?id=' . $id . '"><img src="'.$backdrop.'"><h4>'.$title.'</h4></a></li><hr>';
             }
         }
    
