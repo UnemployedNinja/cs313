@@ -24,7 +24,13 @@
 <div class="topnav">
    <a class="active" href="home.php">Home</a>
    <a href="mylist.php">Movie/Series List</a>
-   <a href="login.html">Login</a>
+   <?php
+      if(session_id() == '' || !isset($_SESSION)) {
+         echo '<a href="login.php">Login</a>';
+     }else {
+      echo "<a>$_SESSION['username']</a>";
+     }
+   ?>
       <div class="search-container">
 
          <form action="search.php" method="GET">
