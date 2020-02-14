@@ -28,7 +28,7 @@
       if(session_id() == '' || !isset($_SESSION)) {
          echo '<a href="login.php">Login</a>';
      }else {
-      echo "<a>$_SESSION['username']</a>";
+      echo '<a>' . $_SESSION['username'] . '</a>';
      }
    ?>
       <div class="search-container">
