@@ -80,6 +80,11 @@
             session_start();
             $_SESSION["username"] = $_GET['username'];
             $_SESSION["password"] = $_GET['passsword'];
+            $user = $_SESSION["username"];
+            $pass = $_SESSION["password"];
+
+            $statement = $db->prepare("INSERT INTO user_profile (username, password) VALUES ($user, $pass)");
+            $statement->execute();
 
             header("Refresh: 1; url=home.php");
         }
