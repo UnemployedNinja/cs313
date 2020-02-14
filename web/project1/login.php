@@ -33,8 +33,8 @@
 
             <tr>
                 <td><input type="Reset"></td>
-                <td><button type = "submit" name = "login" onclick = "loginRequest()">Login</button></td>
-                <td><button type = "submit" name = "create" onclick = "createAccount()">Create</button></td>
+                <td><button type = "submit" name = "login" >Login</button></td>
+                <td><button type = "submit" name = "create" >Create</button></td>
             </tr>
             
         </table>
