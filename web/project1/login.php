@@ -52,7 +52,7 @@
         }
 
         function loginRequest() {
-        try {
+            
             session_start();
             $_SESSION["username"] = $_GET['username'];
             $_SESSION["password"] = $_GET['passsword'];
@@ -74,11 +74,7 @@
                // echo "<script type='text/javascript'>alert('Invalid Username or Password!');</script>";
               }
             } 
-        }
-        catch (Exeption $ex) {
-            echo "Error with DB. Details: $ex";
-            die();
-        }
+
         }
 
         function createAccount() {
