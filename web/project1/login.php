@@ -52,14 +52,14 @@
         }
 
         function loginRequest() {
-
+        try {
             session_start();
             $_SESSION["username"] = $_GET['username'];
             $_SESSION["password"] = $_GET['passsword'];
 
             $statement = $db->prepare("SELECT * FROM user_profile");
             $statement->execute();
-            echo "login request";
+            
             while($row = $statement->fetch(PDO::FETCH_ASSOC)) 
             {
                $id = $row['id'];
@@ -74,7 +74,11 @@
                // echo "<script type='text/javascript'>alert('Invalid Username or Password!');</script>";
               }
             } 
-
+        }
+        catch (Exeption $ex) {
+            echo "Error with DB. Details: $ex";
+            die();
+        }
         }
 
         function createAccount() {
