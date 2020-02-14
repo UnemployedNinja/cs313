@@ -56,6 +56,7 @@
 
             $statement = $db->prepare('SELECT * FROM user_profile');
             $statement->execute();
+            echo "login request";
             while($row = $statement->fetch(PDO::FETCH_ASSOC)) 
             {
                $id = $row['id'];
@@ -64,7 +65,7 @@
 
               if($_SESSION["username"] == $username) {
                   if($_SESSION["password"] == $password) {
-                    header("Refresh: 2; url=home.php");
+                    header("Refresh: 1; url=home.php");
                   }
               } else {
                 echo "<script type='text/javascript'>alert('Invalid Username or Password!');</script>";
@@ -79,7 +80,7 @@
             $_SESSION["password"] = $_GET['passsword'];
 
 
-            header("Refresh: 2; url=home.php");
+            header("Refresh: 1; url=home.php");
         }
 
     ?>
