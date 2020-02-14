@@ -68,6 +68,7 @@
 
               if($_SESSION['username'] == $username) {
                   if($_SESSION['password'] == $password) {
+                    $_SESSION['loggedIn'] = true;
                     header("Refresh: 1; url=home.php");
                   }
               } else {
