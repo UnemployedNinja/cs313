@@ -57,17 +57,16 @@
             $_SESSION['username'] = $_GET['username'];
             $_SESSION['password'] = $_GET['passsword'];
 
-            $statement = $db->prepare("SELECT * FROM user_profile");
+            $statement = $db->prepare("SELECT username, password FROM user_profile");
             $statement->execute();
             
             while($row = $statement->fetch(PDO::FETCH_ASSOC)) 
             {
-               $id = $row['id'];
                $username = $row['username'];
                $password = $row['password'];
 
-              if($_GET['username'] == $username) {
-                  if($_GET['password'] == $password) {
+              if($_SESSION['username'] == $username) {
+                  if($_SESSION['password'] == $password) {
                     header('location: home.php');
                   }
               } else {
