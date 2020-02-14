@@ -68,7 +68,7 @@
 
               if($_GET['username'] == $username) {
                   if($_GET['password'] == $password) {
-                    header("Refresh: 1; url=home.php");
+                    header('location: home.php');
                   }
               } else {
                // echo "<script type='text/javascript'>alert('Invalid Username or Password!');</script>";
