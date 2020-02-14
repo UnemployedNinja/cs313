@@ -57,7 +57,7 @@
             $_SESSION["username"] = $_GET['username'];
             $_SESSION["password"] = $_GET['passsword'];
 
-            $statement = $db->prepare('SELECT * FROM user_profile');
+            $statement = $db->prepare("SELECT * FROM user_profile");
             $statement->execute();
             echo "login request";
             while($row = $statement->fetch(PDO::FETCH_ASSOC)) 
