@@ -1,4 +1,8 @@
-
+<?php
+    require("dbConnect.php");
+    $db = get_db();
+    session_start();
+?>
 
     <head>
         <link rel="stylesheet" href="home.css">
