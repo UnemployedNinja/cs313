@@ -14,7 +14,7 @@
 <body>
 
     <div class = container4>
-        <form id = "loginForm" method = "GET">
+        <form id = "loginForm" method = "POST">
         <table align = "center" width = "25%">
 
             <tr>
@@ -43,19 +43,19 @@
 
     <?php
 
-        if (isset($_GET['login'])) {
+        if (isset($_POST['login'])) {
             loginRequest();
         }
 
-        if (isset($_GET['create'])) {
+        if (isset($_POST['create'])) {
            createAccount();
         }
 
         function loginRequest() {
 
             session_start();
-            $_SESSION['username'] = $_GET['username'];
-            $_SESSION['password'] = $_GET['passsword'];
+            $_SESSION['username'] = $_POST['username'];
+            $_SESSION['password'] = $_POST['passsword'];
 
             $statement = $db->prepare("SELECT username, password FROM user_profile");
             $statement->execute();
