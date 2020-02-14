@@ -52,10 +52,10 @@
         }
 
         function loginRequest() {
-            
+
             session_start();
-            $_SESSION["username"] = $_GET['username'];
-            $_SESSION["password"] = $_GET['passsword'];
+            $_SESSION['username'] = $_GET['username'];
+            $_SESSION['password'] = $_GET['passsword'];
 
             $statement = $db->prepare("SELECT * FROM user_profile");
             $statement->execute();
