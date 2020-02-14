@@ -71,7 +71,7 @@
                     header("Refresh: 1; url=home.php");
                   }
               } else {
-                echo "<script type='text/javascript'>alert('Invalid Username or Password!');</script>";
+               // echo "<script type='text/javascript'>alert('Invalid Username or Password!');</script>";
               }
             } 
 
@@ -81,7 +81,6 @@
             session_start();
             $_SESSION["username"] = $_GET['username'];
             $_SESSION["password"] = $_GET['passsword'];
-
 
             header("Refresh: 1; url=home.php");
         }
