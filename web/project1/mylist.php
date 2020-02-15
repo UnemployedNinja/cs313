@@ -1,8 +1,3 @@
-<?php
-  require("dbConnect.php");
-  $db = get_db();
-?>
-
 <head>
    <link rel="stylesheet" href="home.css">
    <title>Movies List</title>
