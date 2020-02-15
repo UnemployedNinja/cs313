@@ -52,8 +52,8 @@
    while ($row = $movie->fetch(PDO::FETCH_ASSOC))
    {
       $title = $row["title"];
-      $year = $row["year"];
-      $image = $row["cover"];
+     // $year = $row["year"];
+      //$image = $row["cover"];
       echo "$title<br>$year<br><img src='$image'>";
    }
 ?>
