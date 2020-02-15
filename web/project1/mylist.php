@@ -54,7 +54,7 @@
       $title = $row["title"];
       $year = $row["year"];
       $image = $row["cover"];
-      echo "$title<br>$year<br><img src='$image'>";
+      echo "$title<br>$year<br><img src='$image'><br><hr>";
    }
 ?>
 
