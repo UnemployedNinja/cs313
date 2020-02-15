@@ -47,11 +47,10 @@
    require "dbConnect.php";
 
    $db = get_db();
-   $movie = $db->prepare("SELECT * FROM movie mt INNER JOIN list l ON mt.id = l.movie_id INNER JOIN user_profile p ON l.user_id = p.id WHERE l.user_id = 1");// p.id");
+   $movie = $db->prepare("SELECT title, year, cover FROM movie mt INNER JOIN list l ON mt.id = l.movie_id Where l.user_id = 1");
    $movie->execute();
    while ($row = $movie->fetch(PDO::FETCH_ASSOC))
    {
-      $id = $row['id'];
       $title = $row["title"];
       $year = $row["year"];
       $image = $row["cover"];
