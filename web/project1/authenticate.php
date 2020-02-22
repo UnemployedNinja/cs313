@@ -15,7 +15,6 @@
     $password = htmlspecialchars($_POST["password"]);
     $_SESSION["username"] = $username;
  
-    if(isset($_SESSION["username"])) {
     try {
 
         $statement = $db->prepare("SELECT password FROM user_profile WHERE username = :username");
@@ -36,5 +35,5 @@
     } catch (Exeption $e) {
         die();
     }
-}
+    
 ?>
