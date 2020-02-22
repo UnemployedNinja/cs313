@@ -112,13 +112,12 @@
                 echo '<form method = "POST"><button type = "button" name = "seriesAdd">Add to List</button></form><br><hr><br>';
             }
         }
-        
+
         if (isset($_POST['movieAdd'])) 
         {     
-            require "dbConnect.php";
-
+        
             $db = get_db();
-            $uID = $_SESSION('user_id');
+            $uID = $_SESSION('UID');
 
             $addToList = $db->prepare("INSERT INTO movie (title, year, cover) VALUES ('$title', '$year', '$backdrop')");
             $addToList->execute();
@@ -129,9 +128,16 @@
         }
         if(isset($_POST['seriesAdd']))
         {
+            $db = get_db();
+            $uID = $_SESSION('UID');
 
+            $addToList = $db->prepare("INSERT INTO movie (title, year, cover) VALUES ('$title', '$year', '$backdrop')");
+            $addToList->execute();
+
+            $addToList = $db->prepare("INSERT INTO list (user_id, movie_id) VALUES ('$uID', '$id')");
+            $addToList->execute();
         }   
-
+        
         ?>
 
     </body>
