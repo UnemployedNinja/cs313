@@ -22,7 +22,7 @@
         $statement->execute();
     
         while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-            if (password_verify($password, $row["pass_hash"])) {
+            if (password_verify($password, $row["password"])) {
                 $authenticate = true;
             }
         }
