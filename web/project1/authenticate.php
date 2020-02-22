@@ -17,7 +17,7 @@
  
     try {
 
-        $statement = $db->prepare('SELECT username FROM user_profile WHERE username = :username');
+        $statement = $db->prepare('SELECT password FROM user_profile WHERE username = :username');
         $statement->bindValue(':username', $username);
         $statement->execute();
     
