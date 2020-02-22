@@ -10,7 +10,7 @@
     <div class="topnav">
         <a class="active" href="home.php">Home</a>
         <a href="mylist.php">Movie/Series List</a>
-        <a href="login.html">Login</a>
+        <a href="login.php">Login</a>
             <div class="search-container">
 
                 <form action="search.php" method="GET">

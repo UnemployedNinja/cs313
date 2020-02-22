@@ -13,7 +13,7 @@
     <div class="topnav">
         <a class="active" href="#home">Home</a>
         <a href="mylist.php">Movie/Series List</a>
-        <a href="login.html">Login</a>
+        <a href="login.php">Login</a>
         <a>
             <?php
                 print_r($_SESSION['username']);
