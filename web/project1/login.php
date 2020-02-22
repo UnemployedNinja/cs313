@@ -52,7 +52,7 @@
                     </div>
                     <div class="form-row">
                         <label for="confirmPassword">Confirm Password:</label>
-                        <input class="form-control" type="confirmPassword" name="confirmPassword" id="confirmPassword" required>
+                        <input class="form-control" type="password" name="confirmPassword" id="confirmPassword" required>
                         <?php
                             if (isset($_GET["confirmError"])) { ?>
                                 <p style="color: red"><?php echo "Password must match!"?></p>
