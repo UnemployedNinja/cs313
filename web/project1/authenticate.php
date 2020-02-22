@@ -27,6 +27,7 @@
                 $_SESSION["UID"] = $db->prepare("SELECT id FROM user_profile WHERE username = :username");
             }
         }
+        if (isset($_SESSION['username'] && isset($_SESSION['UID']))) {
         if ($authenticate == true) {
             header("Location: home.php");
         } else {
@@ -35,5 +36,6 @@
     } catch (Exeption $e) {
         die();
     }
+}
     
 ?>
