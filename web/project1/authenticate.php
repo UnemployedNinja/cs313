@@ -20,6 +20,7 @@
         $statement = $db->prepare('SELECT password FROM user_profile WHERE username = :username');
         $statement->bindValue(':username', $username);
         $statement->execute();
+        var_dump($username);
     
         while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
             if (password_verify($password, $row["password"])) {
