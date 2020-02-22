@@ -1,12 +1,13 @@
 DROP TABLE list;
+DROP TABLE episode_tracker; 
 DROP TABLE user_profile;
 Drop TABLE movie;
-DROP TABLE episode_tracker; 
+
 
 CREATE TABLE user_profile
 ( id                SERIAL           NOT NULL PRIMARY KEY
-, username          VARCHAR(50)      NOT NULL
-, password          VARCHAR(50)      NOT NULL
+, username          VARCHAR(100)      NOT NULL
+, password          VARCHAR(100)      NOT NULL
 );
 
 CREATE TABLE movie
