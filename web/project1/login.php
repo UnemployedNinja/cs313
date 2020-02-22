@@ -18,12 +18,12 @@
 
             <tr>
                 <td>Username:</td>
-                <td><input type = "text" name = "username" id = "usernameID" placeholder = "Username" required></td>
+                <td><input type = "text" name = "username" id = "usernameID" placeholder = "Username" value="Shawn" required></td>
             </tr>
 
             <tr>
                 <td>Password:</td>
-                <td><input type = "password" name = "password" id = "passwordID" placeholder = "Password" required></td>
+                <td><input type = "password" name = "password" id = "passwordID" placeholder = "Password" value="Phillips" required></td>
             </tr>
 
             <tr>
