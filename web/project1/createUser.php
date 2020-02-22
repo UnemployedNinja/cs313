@@ -19,10 +19,10 @@
         header("Location: login.php?confirmError=1");
         die();
     } 
-    if(ctype_alnum($password)) {
-        header("Location: login.php?alphaNumError=1");
-        die();
-    }
+    // if(ctype_alnum($password)) {
+    //     header("Location: login.php?alphaNumError=1");
+    //     die();
+    // }
     $pass_hash = password_hash($password, PASSWORD_DEFAULT);
 
     try {
