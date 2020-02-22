@@ -29,7 +29,7 @@
             <tr>
                 <td><input type="Reset"></td>
                 <td><button type = "submit" name = "login" value="Login">Login</button></td>
-                <td><button type = "submit" name = "create" value="Create">Create</button></td>
+                
             </tr>
             
         </table>
