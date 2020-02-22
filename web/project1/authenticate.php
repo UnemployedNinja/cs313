@@ -28,13 +28,12 @@
         }
         
         if(isset($_SESSION['username'])) {
-            if(isset($_SESSION['UID'])) {
                 if ($authenticate == true) {
                     header("Location: home.php");
                 } else {
                     header("Location: login.php");
                 }
-            }
+            
         }
        
     } catch (Exeption $e) {
