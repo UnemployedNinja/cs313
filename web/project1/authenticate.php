@@ -1,5 +1,4 @@
 <?php
-    session_destroy();
     session_start();
 
     try {
@@ -27,15 +26,20 @@
                 $_SESSION["UID"] = $db->prepare("SELECT id FROM user_profile WHERE username = :username");
             }
         }
-        if (isset($_SESSION['username'] && isset($_SESSION['UID']))) {
-        if ($authenticate == true) {
-            header("Location: home.php");
-        } else {
-            header("Location: login.php");
+        
+        if(isset($_SESSION['username'])) {
+            if(isset($_SESSION['UID'])) {
+                if ($authenticate == true) {
+                    header("Location: home.php");
+                } else {
+                    header("Location: login.php");
+                }
+            }
         }
+       
     } catch (Exeption $e) {
         die();
     }
-}
-    
+
+    //if (isset($_SESSION['username'] && isset($_SESSION['UID']))) {
 ?>
