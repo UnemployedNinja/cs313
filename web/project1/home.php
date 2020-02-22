@@ -17,7 +17,7 @@
         <a href="login.php">Login</a>
         <a>
             <?php
-                print_r($_SESSION['username']);
+                echo 'Session username is: ' . $_SESSION['username'];
             ?>
         </a>
 
