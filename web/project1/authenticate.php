@@ -12,7 +12,7 @@
     $authenticate = false;
     $username = htmlspecialchars($_POST["username"]);    
     $password = htmlspecialchars($_POST["password"]);
-    $_SESSION["username"] = $username;
+    $_SESSION['username'] = $username;
  
     try {
 
@@ -23,7 +23,7 @@
         while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
             if (password_verify($password, $row["password"])) {
                 $authenticate = true;
-                $_SESSION["UID"] = $db->prepare("SELECT id FROM user_profile WHERE username = :username");
+                $_SESSION['UID'] = $db->prepare("SELECT id FROM user_profile WHERE username = :username");
             }
         }
         
@@ -41,5 +41,4 @@
         die();
     }
 
-    //if (isset($_SESSION['username'] && isset($_SESSION['UID']))) {
 ?>
