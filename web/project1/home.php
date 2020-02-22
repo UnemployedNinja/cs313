@@ -14,7 +14,7 @@
         <a class="active" href="#home">Home</a>
         <a href="mylist.php">Movie/Series List</a>
         <?php
-            if(session_id() == '' || !isset($_SESSION)) {
+            if($_SESSION['id'] == '') {
                 echo '<a href="login.php">Login</a>';
             }else {
                  echo '<a>' . $_SESSION['username'] . '</a>';
