@@ -13,13 +13,12 @@
     <div class="topnav">
         <a class="active" href="#home">Home</a>
         <a href="mylist.php">Movie/Series List</a>
-        <?php
-            if($_SESSION['id'] == '') {
-                echo '<a href="login.php">Login</a>';
-            }else {
-                 echo '<a>' . $_SESSION['username'] . '</a>';
-            }
-        ?>
+        <a href="login.html">Login</a>
+        <a>
+            <?php
+                print_r($_SESSION['username']);
+            ?>
+        </a>
 
             <div class="search-container">
 
