@@ -33,7 +33,7 @@
                 } else {
                     header("Location: login.php");
                 }
-            
+            }
         }
        
     } catch (Exeption $e) {
