@@ -6,6 +6,11 @@
         $user = $_SESSION['username'];
         echo 'Session username is: ' . $user;
     }
+    if(isset($_SESSION['UID'])) {
+        $UID = $_SESSION['UID'];
+        echo 'Session UID is: ' . $UID;
+    }
+
 ?>
 
     <head>
