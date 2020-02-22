@@ -23,7 +23,9 @@
         while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
             if (password_verify($password, $row["password"])) {
                 $authenticate = true;
-               // $_SESSION['UID'] = $db->prepare("SELECT id FROM user_profile WHERE username = :username");
+                $_SESSION['UID'] = $db->prepare("SELECT id FROM user_profile WHERE username = :username");
+                $statement->bindValue(':username', $username);
+                $statement->execute();
             
             }
         }
