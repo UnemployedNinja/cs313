@@ -104,7 +104,7 @@
 			    } else {
 				    $backdrop = 'http://image.tmdb.org/t/p/w300'.$backdrop;
 			    }
-                echo '<li><a href="tvshow.php?id=' . $id . '"><img src="'.$backdrop.'"><h4>'.$title.'</h4></a></li><hr>';
+                echo '<li><a href="tvshow.php?id=' . $id . '"><img src="'.$backdrop.'"><h4>'.$title.'</h4></a></li>';
                 echo '<form method = "POST"><button type = "button" name = "seriesAdd">Add to List</button></form><br><hr><br>';
             }
         }
