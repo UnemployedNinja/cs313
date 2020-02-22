@@ -9,14 +9,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>W07 Welcome Page</title>
+    <title>Login Page</title>
 </head>
 <body>
     <div>
-        <h1 class="centered">Welcome Page!</h1>
         <div class="row p-3">
             <div class="col">
-                <form action="ta07authenticate.php" method="POST" class="container">
+                <form action="authenticate.php" method="POST" class="container">
                     <h3 class="centered">Login</h3>
                     <div class="form-row">
                         <label for="username">Username:</label>
@@ -33,7 +32,7 @@
                 </form>
             </div>
             <div class="col">
-                <form action="ta07insert.php" method="post" class="container">
+                <form action="createUser.php" method="post" class="container">
                     <h3 class="centered">Create New User</h3>
                     <div class="form-row">
                         <label for="username">Username:</label>
