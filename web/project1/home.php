@@ -17,8 +17,11 @@
         <a href="login.php">Login</a>
         <a>
             <?php
-                $user = $_SESSION['username'];
-                echo 'Session username is: ' . $user;
+                if(isset($_SESSION['username'])) {
+                    $user = $_SESSION['username'];
+                    echo 'Session username is: ' . $user;
+                }
+               
             ?>
         </a>
 
