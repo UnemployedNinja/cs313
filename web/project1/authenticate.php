@@ -13,12 +13,12 @@
     $authenticate = false;
     $username = htmlspecialchars($_POST["username"]);    
     $password = htmlspecialchars($_POST["password"]);
-    $_SESSION['username'] = $_POST['username'];
+    $_SESSION['username'] = $_POST["username"];
  
     var_dump($username);
     try {
 
-        $statement = $db->prepare("SELECT password FROM user_profile WHERE username = '$username'");
+        $statement = $db->prepare("SELECT password FROM user_profile WHERE username = :username");
         $statement->bindValue(':username', $username);
         $statement->execute();
        
