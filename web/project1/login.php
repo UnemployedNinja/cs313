@@ -1,8 +1,3 @@
-<?php
-    require("dbConnect.php");
-    $db = get_db();
-?>
-
 <!DOCTYPE html>
 <html>
 <head> 
@@ -33,63 +28,13 @@
 
             <tr>
                 <td><input type="Reset"></td>
-                <td><button type = "submit" name = "login" >Login</button></td>
-                <td><button type = "submit" name = "create" >Create</button></td>
+                <td><button type = "submit" name = "login" value="Login">Login</button></td>
+                <td><button type = "submit" name = "create" value="Create">Create</button></td>
             </tr>
             
         </table>
         </form>
     </div>
-
-    <?php
-
-        if (isset($_POST['login'])) {
-            loginRequest();
-        }
-
-        if (isset($_POST['create'])) {
-           createAccount();
-        }
-
-        function loginRequest() {
-
-            session_start();
-            $_SESSION['username'] = $_POST['username'];
-            $_SESSION['password'] = $_POST['passsword'];
-
-            $statement = $db->prepare("SELECT username, password FROM user_profile");
-            $statement->execute();
-            
-            while($row = $statement->fetch(PDO::FETCH_ASSOC)) 
-            {
-               $username = $row['username'];
-               $password = $row['password'];
-
-              if($_SESSION['username'] == $username) {
-                  if($_SESSION['password'] == $password) {
-                    header("location: ./home.php");
-                  }
-              } else {
-                echo "Invalid Username or Password!";
-              }
-            } 
-
-        }
-
-        function createAccount() {
-            session_start();
-            $_SESSION["username"] = $_GET['username'];
-            $_SESSION["password"] = $_GET['passsword'];
-            $user = $_SESSION["username"];
-            $pass = $_SESSION["password"];
-
-            $statement = $db->prepare("INSERT INTO user_profile (username, password) VALUES ('$user', '$pass')");
-            $statement->execute();
-
-            header("Refresh: 1; url=home.php");
-        }
-
-    ?>
 </body>
 
 </html>
