@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <div class = container4>
+    <div class = "col">
         <form id = "loginForm" method = "POST">
         <table align = "center" width = "25%">
 
@@ -36,7 +36,7 @@
         </form>
     </div>
 
-    <div class = container4>
+    <div class = col
         <form id = "loginForm" method = "POST">
         <table align = "center" width = "25%">
 
