@@ -133,10 +133,10 @@
         
             $db = get_db();
 
-            $addToList = $db->prepare("INSERT INTO movie (title, year, cover) VALUES ('$title', '$year', '$backdrop')");
+            $addToList = $db->prepare("INSERT INTO movie (title, year, cover) VALUES ($title, $year, $backdrop)");
             $addToList->execute();
 
-            $addToList = $db->prepare("INSERT INTO list (user_id, movie_id) VALUES ('$UID', '$id')");
+            $addToList = $db->prepare("INSERT INTO list (user_id, movie_id) VALUES ($UID, $id)");
             $addToList->execute();
 
         }
@@ -144,10 +144,10 @@
         {
             $db = get_db();
 
-            $addToList = $db->prepare("INSERT INTO movie (title, year, cover) VALUES ('$title', '$year', '$backdrop')");
+            $addToList = $db->prepare("INSERT INTO movie (title, year, cover) VALUES ($title, $year, $backdrop)");
             $addToList->execute();
 
-            $addToList = $db->prepare("INSERT INTO list (user_id, movie_id) VALUES ('$UID', '$id')");
+            $addToList = $db->prepare("INSERT INTO list (user_id, movie_id) VALUES ($UID, $id)");
             $addToList->execute();
         }   
         
