@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="search.css">
         <title>Movies List</title>
     </head>
     
@@ -43,7 +43,7 @@
                     </select>
 
                     <input type="text" placeholder="Search.." name="search" required>
-                    <button type="submit" name="submit" style = "background-color: blue;" >Submit</button>
+                    <button type="submit" name="submit" class ="button/" >Submit</button>
 
                 </form>
             </div>
