@@ -132,7 +132,6 @@
         {     
         
             $db = get_db();
-            $uID = $_SESSION('UID');
 
             $addToList = $db->prepare("INSERT INTO movie (title, year, cover) VALUES ('$title', '$year', '$backdrop')");
             $addToList->execute();
@@ -144,7 +143,6 @@
         if(isset($_POST['seriesAdd']))
         {
             $db = get_db();
-            $uID = $_SESSION('UID');
 
             $addToList = $db->prepare("INSERT INTO movie (title, year, cover) VALUES ('$title', '$year', '$backdrop')");
             $addToList->execute();
