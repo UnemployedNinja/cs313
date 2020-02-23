@@ -28,6 +28,7 @@
             $UIDStatement = $db->prepare("SELECT id FROM user_profile WHERE username = :username");
             $UIDStatement->bindValue(':username', $username);
             $UIDStatement->execute();
+            
             while($UIDrow = $UIDStatement->fetch(PDO::FETCH_ASSOC)) {
                 $_SESSION['UID'] = $UIDrow['id'];
             }
