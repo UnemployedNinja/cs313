@@ -8,13 +8,17 @@
 <div class="topnav">
    <a class="active" href="home.php">Home</a>
    <a href="mylist.php">Movie/Series List</a>
-   <?php
-      if(session_id() == '' || !isset($_SESSION)) {
-         echo '<a href="login.php">Login</a>';
-     }else {
-      echo '<a>' . $_SESSION['username'] . '</a>';
-     }
-   ?>
+   <a>
+        <?php
+            if(isset($_SESSION['username'])) {
+                $user = $_SESSION['username'];
+                echo $user;
+            } else {
+                echo '<a href="login.php">Login</a>';
+            }
+               
+        ?>
+        </a>
       <div class="search-container">
 
          <form action="search.php" method="GET">
