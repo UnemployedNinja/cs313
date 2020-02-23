@@ -3,15 +3,15 @@
     $db = get_db();
     session_start();
 
-    if(isset($_SESSION['username'])) {
-        $user = $_SESSION['username'];
-        echo 'Session username is: ' . $user;
-    }
+    // if(isset($_SESSION['username'])) {
+    //     $user = $_SESSION['username'];
+    //     echo 'Session username is: ' . $user;
+    // }
 
-    if(isset($_SESSION['UID'])) {
-        $UID = $_SESSION['UID'];
-        echo 'Session UID is: ' . $UID;
-    }
+    // if(isset($_SESSION['UID'])) {
+    //     $UID = $_SESSION['UID'];
+    //     echo 'Session UID is: ' . $UID;
+    // }
     
 ?>
 
@@ -25,12 +25,14 @@
     <div class="topnav">
         <a class="active" href="#home">Home</a>
         <a href="mylist.php">Movie/Series List</a>
-        <a href="login.php">Login</a>
+        
         <a>
             <?php
                 if(isset($_SESSION['username'])) {
                     $user = $_SESSION['username'];
-                    echo 'Session username is: ' . $user;
+                    echo $user;
+                } else {
+                    echo '<a href="login.php">Login</a>';
                 }
                
             ?>
