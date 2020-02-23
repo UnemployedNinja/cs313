@@ -19,11 +19,11 @@
                     <h3 class="centered">Login</h3>
                     <div class="form-row">
                         <label for="username">Username:</label>
-                        <input class="form-control" type="text" name="username" id="username" value="joe" required>
+                        <input class="form-control" type="text" name="username" id="username" required>
                     </div>
                     <div class="form-row">
                         <label for="password">Password:</label>
-                        <input class="form-control" type="password" name="password" id="password" value="password1" required>
+                        <input class="form-control" type="password" name="password" id="password" required>
                     </div>
                     <br>
                     <div class="text-center">
