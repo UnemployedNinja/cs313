@@ -10,8 +10,8 @@
 <body>
 
 <div class="topnav">
-   <a class="active" href="home.php">Home</a>
-   <a href="mylist.php">Movie/Series List</a>
+   <a href="home.php" href="home.php">Home</a>
+   <a class="active">Movie/Series List</a>
    <a>
         <?php
             if(isset($_SESSION['username'])) {
