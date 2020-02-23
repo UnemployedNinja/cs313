@@ -133,7 +133,10 @@
         
             $db = get_db();
 
-            $addToList = $db->prepare("INSERT INTO movie (title, year, cover) VALUES ($title, $year, $backdrop)");
+            $addToList = $db->prepare("INSERT INTO movie (title, year, cover) VALUES (:title, :year, :backdrop)");
+            $stmt->bindValue(':title', $title);
+            $stmt->bindValue(':year', $year);
+            $stmt->bindValue(':backdrop', $backdrop);
             $addToList->execute();
 
             $addToList = $db->prepare("INSERT INTO list (user_id, movie_id) VALUES ($UID, $id)");
