@@ -54,7 +54,8 @@
         $input = $_GET['search'];
         $channel = $_GET['channel'];
         $search = $input;
-
+        echo "<br>";
+        
         include_once "info.php";
         $title = 'Result Search | '.$input;
 
