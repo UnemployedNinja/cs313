@@ -135,16 +135,15 @@
             echo "This is in movieadd $title, $year, $backdrop";
 
             $addToList = $db->prepare("INSERT INTO movie (title, year, cover) VALUES (:title, :year, :backdrop)");
-            $stmt->bindValue(':title', $title);
-            $stmt->bindValue(':year', $year);
-            $stmt->bindValue(':backdrop', $backdrop);
+            $addToList->bindValue(':title', $title);
+            $addToList->bindValue(':year', $year);
+            $addToList->bindValue(':backdrop', $backdrop);
             $addToList->execute();
 
-            $addToList = $db->prepare("INSERT INTO list (user_id, movie_id) VALUES (:UID, :id)");
+            $stmt = $db->prepare("INSERT INTO list (user_id, movie_id) VALUES (:UID, :id)");
             $stmt->bindValue(':user_id', $UID);
             $stmt->bindValue(':movie_id', $id);
-
-            $addToList->execute();
+            $stmt->execute();
 
         }
         if(isset($_POST['seriesAdd']))
@@ -154,8 +153,8 @@
             $addToList = $db->prepare("INSERT INTO movie (title, year, cover) VALUES ($title, $year, $backdrop)");
             $addToList->execute();
 
-            $addToList = $db->prepare("INSERT INTO list (user_id, movie_id) VALUES ($UID, $id)");
-            $addToList->execute();
+            $stmt = $db->prepare("INSERT INTO list (user_id, movie_id) VALUES ($UID, $id)");
+            $stmt->execute();
         }   
         
         ?>
