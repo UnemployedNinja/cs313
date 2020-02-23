@@ -1,7 +1,11 @@
 <?php
     require "dbConnect.php";
     session_start();
+    if(isset($_SESSION['UID'])){
+        $UID = $_SESSION['UID'];
+    }
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>

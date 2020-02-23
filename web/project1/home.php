@@ -26,18 +26,15 @@
         <a class="active" href="#home">Home</a>
         <a href="mylist.php">Movie/Series List</a>
         
-        <a>
-            <?php
-                if(isset($_SESSION['username'])) {
-                    $user = $_SESSION['username'];
-                    echo $user;
-                } else {
-                    echo '<a href="login.php">Login</a>';
-                }
+        <?php
+            if(isset($_SESSION['username'])) {
+                $user = $_SESSION['username'];
+                echo $user;
+            } else {
+                echo '<a href="login.php">Login</a>';
+            }
                
-            ?>
-        </a>
-
+        ?>
             <div class="search-container">
 
                 <form action="search.php" method="GET">
