@@ -140,10 +140,10 @@
             $addToList->bindValue(':backdrop', $backdrop);
             $addToList->execute();
 
-            $stmt = $db->prepare("INSERT INTO list (user_id, movie_id) VALUES (:UID, :id)");
-            $stmt->bindValue(':user_id', $UID);
-            $stmt->bindValue(':movie_id', $id);
-            $stmt->execute();
+            // $stmt = $db->prepare("INSERT INTO list (user_id, movie_id) VALUES (:UID, :id)");
+            // $stmt->bindValue(':user_id', $UID);
+            // $stmt->bindValue(':movie_id', $id);
+            // $stmt->execute();
 
         }
         if(isset($_POST['seriesAdd']))
