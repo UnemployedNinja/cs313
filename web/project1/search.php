@@ -139,7 +139,10 @@
             $stmt->bindValue(':backdrop', $backdrop);
             $addToList->execute();
 
-            $addToList = $db->prepare("INSERT INTO list (user_id, movie_id) VALUES ($UID, $id)");
+            $addToList = $db->prepare("INSERT INTO list (user_id, movie_id) VALUES (:UID, :id)");
+            $stmt->bindValue(':user_id', $UID);
+            $stmt->bindValue(':movie_id', $id);
+
             $addToList->execute();
 
         }

@@ -51,8 +51,8 @@
    require "dbConnect.php";
 
    $db = get_db();
-   $movie = $db->prepare("SELECT title, year, cover FROM movie mt INNER JOIN list l ON mt.id = l.movie_id Where l.user_id = :UID");
-   $statement->bindValue(':user_id', $UID);
+   $movie = $db->prepare("SELECT title, year, cover FROM movie mt INNER JOIN list l ON mt.id = l.movie_id Where l.user_id = 1");
+   //$statement->bindValue(':user_id', $UID);
    $movie->execute();
    while ($row = $movie->fetch(PDO::FETCH_ASSOC))
    {
