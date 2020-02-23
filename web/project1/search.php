@@ -55,7 +55,7 @@
         $channel = $_GET['channel'];
         $search = $input;
         echo "<br>";
-        
+
         include_once "info.php";
         $title = 'Result Search | '.$input;
 
@@ -137,7 +137,7 @@
             $addToList = $db->prepare("INSERT INTO movie (title, year, cover) VALUES ('$title', '$year', '$backdrop')");
             $addToList->execute();
 
-            $addToList = $db->prepare("INSERT INTO list (user_id, movie_id) VALUES ('$uID', '$id')");
+            $addToList = $db->prepare("INSERT INTO list (user_id, movie_id) VALUES ('$UID', '$id')");
             $addToList->execute();
 
         }
@@ -149,7 +149,7 @@
             $addToList = $db->prepare("INSERT INTO movie (title, year, cover) VALUES ('$title', '$year', '$backdrop')");
             $addToList->execute();
 
-            $addToList = $db->prepare("INSERT INTO list (user_id, movie_id) VALUES ('$uID', '$id')");
+            $addToList = $db->prepare("INSERT INTO list (user_id, movie_id) VALUES ('$UID', '$id')");
             $addToList->execute();
         }   
         
