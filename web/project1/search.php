@@ -43,7 +43,7 @@
                     </select>
 
                     <input type="text" placeholder="Search.." name="search" required>
-                    <button type="submit" name="submit">Submit</button>
+                    <button type="submit" name="submit" style = "background-color: blue;" >Submit</button>
 
                 </form>
             </div>
