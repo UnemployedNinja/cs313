@@ -132,6 +132,7 @@
         {     
         
             $db = get_db();
+            echo "This is in movieadd $title, $year, $backdrop";
 
             $addToList = $db->prepare("INSERT INTO movie (title, year, cover) VALUES (:title, :year, :backdrop)");
             $stmt->bindValue(':title', $title);
