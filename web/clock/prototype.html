@@ -2,40 +2,28 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8" />
-      <link rel="stylesheet" href="/dist/css/main.css" type="text/css" />
-      <link rel="stylesheet" href="https://pro2-bar-s3-cdn-cf4.myportfolio.com/76b02a83-7f02-49e0-a297-a598d6c1a075/f01ba1f71673d0bca78eb3909f510a4a1580763031.css?h=1b658d6270ad127cc200b29154dffda8" type="text/css" />
-    <link rel="canonical" href="prototype.html" />
+      <link rel="stylesheet" href="prototype.css">
 </head>
-
-    <body style="background-image: url('background.jpg');" width="100%" height="auto" background-size="cover">  
-  
+<div class="bg">
    <!-- NAVEGATION BAR BUTTONS-->
-    <header class="site-header js-site-header js-editable-target editable  js-fixed-nav js-editable-target editable" data-context="theme.nav">
-        <nav class="nav-container js-editable-target editable">
-      <div class="page-title">
-        <a href="prototype.html" class="active" >Home</a>
-      </div>
-      <div class="page-title">
-        <a href="https://raquelawerkamp.com/projects" >Projects</a>
-      </div>
-      <div class="page-title">
-        <a href="https://raquelawerkamp.com/contact" >Contact</a>
-      </div>
-        </nav>
-        <div class="logo-wrap js-editable-target editable" data-context="theme.logo.header">
-          <div class="logo logo-image  ">
-    <a href="prototype.html" class="image-normal image-link" style = "font-size: 23px;"> Raquel Awerkamp </a>
-          </div>
+    <header>
+      
+      <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="https://raquelawerkamp.com/projects">Projects</a>
+        <a href="https://raquelawerkamp.com/contact">Contact</a>
+        <div class="topnav-right">
+          <a>Raquel Awerkamp</a>
         </div>
+      </div>
+
+        
     </header>
-    <br>
+    
     <h1 style="font-size: 80px;" ><center><font color = "white"><b>Graphc Design</b></font></center></h1>
     <p><center><font color = "white"><b>Freelance Graphc Designer. Need Work? Reach Out!</b></font></center></p>
-       
-
-              <br><br><br>
-             
-
+      
+            <br>
 
               <table style="width: 75%;" align="center">
                 <tr>
@@ -73,18 +61,34 @@
                             </th>
                           </tr>
                   </table>
-
-
-
                 </div>
             </div>
           </div>
         </div>
-        <pre>
-
-
-
-        </pre>
-   
+      
+      </div>
+      
+      <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+        </script>
 
 </html>
