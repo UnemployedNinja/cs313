@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
       <link rel="stylesheet" href="prototype.css">
 </head>
-<div class="bg">
+<div>
    <!-- NAVEGATION BAR BUTTONS-->
     <header>
       
@@ -16,80 +16,116 @@
           <a>Raquel Awerkamp</a>
         </div>
       </div>
-
         
     </header>
     <body>
     
-    <h1 style="font-size: 80px;" ><center><font color = "white"><b>Graphc Design</b></font></center></h1>
-    <p><center><font color = "white"><b>Freelance Graphc Designer. Need Work? Reach Out!</b></font></center></p>
+    <h1 style="font-size: 50px;" ><center><font color = "white"><b>Graphic Design</b></font></center></h1>
+    <p> <center><font color = "white" style="font-size: 20px;"><b>Freelance Graphic Designer. Need Work? Reach Out!</b></font></center></p>
       
             <br>
 
               <table style="width: 75%;" align="center">
                 <tr>
-                  <th><img src="B cards.png" alt="Business Card" style="width:200px; height: 200px;"></th>
-                  <th><img src="booklet.png" alt="Booklet" style="width:200px; height: 200px;"></th>  
-                  <th><img src="Web.png" alt="Website" style="width:200px; height:200px;"></th>
+                  <th>Business Cards<br><img src="B cards.png" alt="Business Card" style="width:200px; height: 200px;" id="bc"></th>
+                  <th>Booklets<br><img src="booklet.png" alt="Booklet" style="width:200px; height: 200px;" id="booklets"></th>  
+                  <th>Websites<br><img src="Web.png" alt="Website" style="width:200px; height:200px;" id="websites"></th>
                 </tr> 
               </table>
               <br>
-              <table style="width: 75%;" align="center">
+              <table style="width: 75%;" align="center" >
                 <tr>
-                  <th><img src="logo.png" alt="logo" style="width:200px; height: 200px;"></th>
-                  <th><img src="anounce.png" alt="Announcements" style="width:200px; height: 200px;"></th>
+                  <th>Logos<br><img src="logo.png" alt="logo" style="width:200px; height: 200px;" id="logo"></th>
+                  <th>Announcements<br><img src="anounce.png" alt="Announcements" style="width:200px; height: 200px;" id="anounce"></th>
                 </tr>
               </table>
+              <br><br>
+
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+              </div>
 
 
-                  <!-- SOCIAL LINKS-->
-                  <table style="width: 20%;" align = "center">
-                          <tr>
-                            <th>
-                              <a href="https://www.facebook.com/raquel.kofoed">
-                                <img src="facebook.png"facebook" style="width:40px; height: 40px;">
-                              </a>    
-                            </th>
-                            <th>
-                              <a href="https://www.linkedin.com/in/raquel-awerkamp-587011a4/">
-                                <img src="in.png" style="width:40px; height: 40px;">
-                              </a>
-                            </th>
-                            <th>
-                              <a href="mailto:RaquelAwerkamp@gmail.com">
-                                <img src="email.png" style="width:40px; height: 40px;">
-                              </a>
-                            </th>
-                          </tr>
-                  </table>
+              <!-- SOCIAL LINKS-->
+              <div class="footer">
+              <table style="width: 20%;" align = "center">
+                  <tr>
+                    <th>
+                      <a href="https://www.facebook.com/raquel.kofoed">
+                        <img src="facebook.png"facebook" style="width:40px; height: 40px;">
+                      </a>    
+                    </th>
+                    <th>
+                      <a href="https://www.linkedin.com/in/raquel-awerkamp-587011a4/">
+                        <img src="in.png" style="width:40px; height: 40px;">
+                      </a>
+                    </th>
+                    <th>
+                      <a href="mailto:RaquelAwerkamp@gmail.com">
+                        <img src="email.png" style="width:40px; height: 40px;">
+                      </a>
+                    </th>
+                  </tr>
                 </div>
-            </div>
-          </div>
-        </div>
-      
+              </footer>
       </div>
-      
+
       <script>
         // Get the modal
         var modal = document.getElementById("myModal");
-        
+
         // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("myImg");
+        var img1 = document.getElementById("bc");
+        var img2 = document.getElementById("booklets");
+        var img3 = document.getElementById("websites");
+        var img4 = document.getElementById("logo");
+        var img5 = document.getElementById("anounce");
+
         var modalImg = document.getElementById("img01");
         var captionText = document.getElementById("caption");
-        img.onclick = function(){
+        img1.onclick = function(){
           modal.style.display = "block";
           modalImg.src = this.src;
           captionText.innerHTML = this.alt;
         }
-        
+        img2.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img3.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img4.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img5.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
-        
+
         // When the user clicks on <span> (x), close the modal
-        span.onclick = function() { 
+        span.onclick = function() {
           modal.style.display = "none";
         }
-        </script>
+      </script>
+
 </body>
 </html>
